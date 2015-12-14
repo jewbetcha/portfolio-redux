@@ -8,14 +8,15 @@
 
   <body ng-controller="mainController">
 
-    <!-- CHAT MARKUP -->
-    <div class="example-chat l-demo-container">
-      <header>Firebase Chat Demo</header>
+    <div class="">
 
       <ul id="example-messages" class="example-chat-messages">
-        <li ng-repeat="msg in messages">
-          <strong class="example-chat-username">{{ msg.from }}</strong>
-          {{ msg.body }}
+        <h1>TEN7</h1>
+        <li ng-repeat="proj in projects">
+          <strong class="example-chat-username">{{ proj.name }}</strong>
+          <p>{{ proj.date }}</p>
+          <p>{{ proj.description }}</p>
+
         </li>
       </ul>
     </div>
@@ -23,32 +24,14 @@
     <script>
       var portfolioApp = angular.module("portfolioApp", ["firebase"]);
 
-      myApp.controller("mainController", ["$scope", "$firebaseArray",
+      portfolioApp.controller("mainController", ["$scope", "$firebaseArray",
         function($scope, $firebaseArray) {
           //CREATE A FIREBASE REFERENCE
-          var ref = new Firebase("https://kolemann.firebaseio.com/");
+          var mainRef = new Firebase("https://kolemann.firebaseio.com/");
+          var projectRef = new Firebase("https://kolemann.firebaseio.com/projects/TEN7");
 
           // GET MESSAGES AS AN ARRAY
-          $scope.messages = $firebaseArray(ref);
-
-          //ADD MESSAGE METHOD
-          // $scope.addMessage = function(e) {
-          //
-          //   //LISTEN FOR RETURN KEY
-          //   if (e.keyCode === 13 && $scope.msg) {
-          //     //ALLOW CUSTOM OR ANONYMOUS USER NAMES
-          //     var name = $scope.name || "anonymous";
-          //
-          //     //ADD TO FIREBASE
-          //     $scope.messages.$add({
-          //       from: name,
-          //       body: $scope.msg
-          //     });
-          //
-          //     //RESET MESSAGE
-          //     $scope.msg = "";
-          //   }
-          // }
+          $scope.projects = $firebaseArray(projectRef);
         }
       ]);
     </script>
