@@ -31,12 +31,12 @@
 
       portfolioApp.controller("mainController", ["$scope", "$firebaseArray",
         function($scope, $firebaseArray) {
-          //CREATE A FIREBASE REFERENCE
+          // Various references to data
           var mainRef = new Firebase("https://kolemann.firebaseio.com/");
           var ten7Ref = new Firebase("https://kolemann.firebaseio.com/projects/TEN7");
           var freelanceRef = new Firebase("https://kolemann.firebaseio.com/projects/Freelance");
 
-          // GET MESSAGES AS AN ARRAY
+          // Bind data to $scope 
           $scope.ten7s = $firebaseArray(ten7Ref);
           $scope.frees = $firebaseArray(freelanceRef);
         }
