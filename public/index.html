@@ -12,11 +12,16 @@
 
       <ul id="example-messages" class="example-chat-messages">
         <h1>TEN7</h1>
-        <li ng-repeat="proj in projects">
-          <strong class="example-chat-username">{{ proj.name }}</strong>
-          <p>{{ proj.date }}</p>
-          <p>{{ proj.description }}</p>
-
+        <li ng-repeat="t in ten7s">
+          <strong class="example-chat-username">{{ t.name }}</strong>
+          <p>{{ t.date }}</p>
+          <p>{{ t.description }}</p>
+        </li>
+        <h1>Freelance</h1>
+        <li ng-repeat="f in frees">
+          <strong class="example-chat-username">{{ f.name }}</strong>
+          <p>{{ f.date }}</p>
+          <p>{{ f.description }}</p>
         </li>
       </ul>
     </div>
@@ -28,10 +33,12 @@
         function($scope, $firebaseArray) {
           //CREATE A FIREBASE REFERENCE
           var mainRef = new Firebase("https://kolemann.firebaseio.com/");
-          var projectRef = new Firebase("https://kolemann.firebaseio.com/projects/TEN7");
+          var ten7Ref = new Firebase("https://kolemann.firebaseio.com/projects/TEN7");
+          var freelanceRef = new Firebase("https://kolemann.firebaseio.com/projects/Freelance");
 
           // GET MESSAGES AS AN ARRAY
-          $scope.projects = $firebaseArray(projectRef);
+          $scope.ten7s = $firebaseArray(ten7Ref);
+          $scope.frees = $firebaseArray(freelanceRef);
         }
       ]);
     </script>
