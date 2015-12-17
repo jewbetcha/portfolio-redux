@@ -1,29 +1,39 @@
 <!doctype html>
 <html ng-app="portfolioApp">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Portfolio site for Coleman Rollins, Web Developer">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
     <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
     <script src="https://cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="stylesheets/normalize.css" >
+    <link type="text/css" rel="stylesheet" href="stylesheets/skeleton.css" >
+    <link type="text/css" rel="stylesheet" href="stylesheets/styles.css" >
   </head>
 
   <body ng-controller="mainController">
+    <div class="container">
+      <div class="four columns">
+        Nav goes here
+      </div>
 
-    <div class="">
-
-      <ul id="example-messages" class="example-chat-messages">
-        <h1>TEN7</h1>
-        <li ng-repeat="t in ten7s">
-          <strong class="example-chat-username">{{ t.name }}</strong>
-          <p>{{ t.date }}</p>
-          <p>{{ t.description }}</p>
-        </li>
-        <h1>Freelance</h1>
-        <li ng-repeat="f in frees">
-          <strong class="example-chat-username">{{ f.name }}</strong>
-          <p>{{ f.date }}</p>
-          <p>{{ f.description }}</p>
-        </li>
-      </ul>
+      <div class="eight columns">
+        <ul id="" class="">
+          <h1>TEN7</h1>
+          <li ng-repeat="t in ten7s">
+            <strong class="example-chat-username">{{ t.name }}</strong>
+            <p>{{ t.date }}</p>
+            <p>{{ t.description }}</p>
+          </li>
+          <h1>Freelance</h1>
+          <li ng-repeat="f in frees">
+            <strong class="example-chat-username">{{ f.name }}</strong>
+            <p>{{ f.date }}</p>
+            <p>{{ f.description }}</p>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <script>
@@ -36,7 +46,7 @@
           var ten7Ref = new Firebase("https://kolemann.firebaseio.com/projects/TEN7");
           var freelanceRef = new Firebase("https://kolemann.firebaseio.com/projects/Freelance");
 
-          // Bind data to $scope 
+          // Bind data to $scope
           $scope.ten7s = $firebaseArray(ten7Ref);
           $scope.frees = $firebaseArray(freelanceRef);
         }
