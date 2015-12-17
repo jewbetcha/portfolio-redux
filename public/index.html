@@ -14,26 +14,43 @@
 
   <body ng-controller="mainController">
     <div class="container">
-      <div class="four columns">
-        Nav goes here
+      <div class="row" id="nav">
+        <div class="four columns">
+          Picture
+        </div>
+        <div class="eight columns">
+          Social
+        </div>
       </div>
 
-      <div class="eight columns">
-        <ul id="" class="">
-          <h1>TEN7</h1>
-          <li ng-repeat="t in ten7s">
-            <strong class="example-chat-username">{{ t.name }}</strong>
-            <p>{{ t.date }}</p>
-            <p>{{ t.description }}</p>
-          </li>
-          <h1>Freelance</h1>
-          <li ng-repeat="f in frees">
-            <strong class="example-chat-username">{{ f.name }}</strong>
-            <p>{{ f.date }}</p>
-            <p>{{ f.description }}</p>
-          </li>
-        </ul>
+      <div id="project">
+        <div class="row">
+          <div class="twelve columns">
+            <ul id="" class="project-list">
+              <h1>TEN7</h1>
+              <li ng-repeat="t in ten7s">
+                <strong class="example-chat-username">{{ t.name }}</strong>
+                <p>{{ t.date }}</p>
+                <p>{{ t.description }}</p>
+              </li>
+            </ul>
+          </div>
       </div>
+      <div class="row">
+          <div class="twelve columns">
+            <ul class="project-list">
+              <h1>Freelance</h1>
+              <li ng-repeat="f in frees">
+                <strong class="example-chat-username">{{ f.name }}</strong>
+                <p>{{ f.date }}</p>
+                <p>{{ f.description }}</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+
     </div>
 
     <script>

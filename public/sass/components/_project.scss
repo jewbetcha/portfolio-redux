@@ -1,0 +1,16 @@
+// Projects
+#project {
+
+  .project-list {
+    list-style: none;
+
+    li {
+      float: left;
+      width: 50%;
+
+      @include mobile_tablet {
+        width: 100%;
+      }
+    }
+  }
+}
