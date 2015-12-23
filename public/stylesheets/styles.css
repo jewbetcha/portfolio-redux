@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+/* line 7, ../sass/components/_global.scss */
+body {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 /* line 3, ../sass/components/_nav.scss */
 #nav {
   height: 100px;
@@ -13,25 +18,36 @@
 /* line 4, ../sass/components/_project.scss */
 #project .project-list {
   list-style: none;
+  text-align: center;
 }
-/* line 7, ../sass/components/_project.scss */
+/* line 8, ../sass/components/_project.scss */
 #project .project-list li {
   float: left;
-  width: 50%;
+  width: 47%;
+  text-align: left;
+  height: 200px;
+  margin-bottom: 20px;
+  margin-right: 28px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 @media only screen and (max-width: 960px) {
-  /* line 7, ../sass/components/_project.scss */
+  /* line 8, ../sass/components/_project.scss */
   #project .project-list li {
-    width: 100%;
+    width: 95%;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
-/* line 15, ../sass/components/_project.scss */
+/* line 31, ../sass/components/_project.scss */
 #project .project-list li img {
   width: 250px;
   float: left;
   margin-right: 10px;
 }
-/* line 20, ../sass/components/_project.scss */
+/* line 36, ../sass/components/_project.scss */
 #project .project-list li p {
   margin-bottom: 0;
 }

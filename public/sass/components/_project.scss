@@ -3,13 +3,29 @@
 
   .project-list {
     list-style: none;
+    text-align: center;
 
     li {
       float: left;
-      width: 50%;
+      width: 47%;
+      text-align: left;
+      height: 200px;
+      margin-bottom: 20px;
+      margin-right: 28px;
+
+      overflow: hidden;
+      -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+      -moz-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+      box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 
       @include mobile_tablet {
-        width: 100%;
+        width: 95%;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      &:hover {
+
       }
 
       img {
