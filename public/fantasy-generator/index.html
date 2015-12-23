@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <script src="jquery.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Generate a name for your fantasy team</h1>
+          <label>Part 1:</label>
+          <select class="form-control" id="firstList">
+            <option value="1">Pop Culture Personalities</option>
+            <option value="2">Gross Verbs</option>
+            <option value="3">Oppinionated Sports Analysts</option>
+            <option value="4">NFL Coaches</option>
+            <option value="5">Swear Words</option>
+          </select>
+          <label>Part 2:</label>
+          <select class="form-control" id="secondList">
+            <option value="1">Nice/fun synonyms</option>
+            <option value="2">Mean/angry synonyms</option>
+            <option value="3">Random discriptive words</option>
+          </select>
+          <label>Part 3:</label>
+          <select class="form-control" id="thirdList">
+            <option value="1">Game of Thrones</option>
+            <option value="2">Nasty Nouns</option>
+            <option value="3">Inanimate Objects</option>
+            <option value="4">NFL Teams</option>
+            <option value="5">Angry Verbs</option>
+          </select>
+          <button type="button" class="btn btn-success" id="generate">Generate!</button>
+          <div id="results">
+              <span id="result1"></span>
+              <span id="result2"></span>
+              <span id="result3"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

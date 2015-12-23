@@ -1,0 +1,17 @@
+.col-md-6 {
+  float: none !important;
+  margin: auto !important;
+  text-align: center;
+}
+button {
+  margin-top: 10px;
+}
+#results {
+  margin-top: 10px;
+}
+#result1,
+#result2,
+#result3 {
+  font-size: 36px;
+  padding-right: 5px;
+}
