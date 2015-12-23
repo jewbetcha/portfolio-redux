@@ -25,3 +25,13 @@
     width: 100%;
   }
 }
+/* line 15, ../sass/components/_project.scss */
+#project .project-list li img {
+  width: 250px;
+  float: left;
+  margin-right: 10px;
+}
+/* line 20, ../sass/components/_project.scss */
+#project .project-list li p {
+  margin-bottom: 0;
+}

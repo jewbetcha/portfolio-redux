@@ -11,6 +11,15 @@
       @include mobile_tablet {
         width: 100%;
       }
+
+      img {
+        width: 250px;
+        float: left;
+        margin-right: 10px;
+      }
+      p {
+        margin-bottom: 0;
+      }
     }
   }
 }
