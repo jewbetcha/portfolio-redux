@@ -2,9 +2,10 @@
 .container {
   width: 100%;
   padding: 0;
+  max-width: 1280px;
 }
 
-/* line 7, ../sass/components/_global.scss */
+/* line 8, ../sass/components/_global.scss */
 body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -16,39 +17,39 @@ body {
   text-align: center;
 }
 
-/* line 4, ../sass/components/_project.scss */
-#project .project-list {
-  list-style: none;
+/* line 2, ../sass/components/_project.scss */
+#projects {
   text-align: center;
 }
-/* line 8, ../sass/components/_project.scss */
-#project .project-list li {
-  float: left;
-  width: 47%;
-  text-align: left;
-  height: 200px;
-  margin-bottom: 20px;
-  margin-right: 28px;
-  overflow: hidden;
-  -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+/* line 6, ../sass/components/_project.scss */
+#projects .columns:nth-child(odd) {
+  margin-left: 0;
 }
-@media only screen and (max-width: 960px) {
-  /* line 8, ../sass/components/_project.scss */
-  #project .project-list li {
-    width: 95%;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+/* line 9, ../sass/components/_project.scss */
+#projects .columns:nth-child(even) {
+  margin-left: 4%;
 }
-/* line 31, ../sass/components/_project.scss */
-#project .project-list li img {
-  width: 250px;
-  float: left;
-  margin-right: 10px;
+/* line 13, ../sass/components/_project.scss */
+#projects .project-container {
+  height: 275px;
+  border-radius: 6px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 1px solid;
+  text-align: center;
 }
-/* line 36, ../sass/components/_project.scss */
-#project .project-list li p {
-  margin-bottom: 0;
+/* line 22, ../sass/components/_project.scss */
+#projects .project-container .project-info {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+}
+/* line 29, ../sass/components/_project.scss */
+#projects .project-container:hover .project-info {
+  opacity: 1;
+  transition: opacity .2s ease-in;
+  background-color: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
 }

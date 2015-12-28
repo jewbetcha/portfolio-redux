@@ -24,27 +24,25 @@
           Connect
         </div>
         <div class="four columns">
-          Blog link
+          Blog link/resume
         </div>
       </div>
 
-      <div id="project">
-        <div class="row">
-          <div class="twelve columns">
-            <ul id="" class="project-list">
-              <h1>My Work</h1>
-              <li ng-repeat="p in projects">
-
-                <img src="{{ p.img }}" />
-                  <strong class="">{{ p.name }}</strong>
-                <p>{{ p.date }}</p>
-                <p>{{ p.tools }}</p>
-                <p>{{ p.affiliation }}</p>
-                <a href="http://{{ p.link }}" target="_blank">{{ p.name }}</a>
-              </li>
-            </ul>
+      <div id="projects">
+            <h1>My Work</h1>
+            <div class="row">
+            <div ng-repeat="p in projects" class="six columns">
+              <div class="project-container" style="background: url({{ p.img }});">
+                <p class="project-info">
+                  <span class="name">{{ p.name }}</span>
+                  <span>{{ p.date }}</span>
+                  <span>{{ p.tools }}</span>
+                  <span>{{ p.affiliation }}</span>
+                  <a href="http://{{ p.link }}" target="_blank">{{ p.name }}</a>
+                </p>
+              </div>
+            </div>
           </div>
-      </div>
       </div>
 
     </div>
