@@ -35,17 +35,33 @@ body {
   border-radius: 6px;
   margin-top: 15px;
   margin-bottom: 15px;
-  border: 1px solid;
   text-align: center;
+  -webkit-box-shadow: 3px 3px 10px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 10px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 10px -1px rgba(0, 0, 0, 0.75);
 }
-/* line 22, ../sass/components/_project.scss */
+/* line 23, ../sass/components/_project.scss */
+#projects .project-container span {
+  display: block;
+}
+/* line 26, ../sass/components/_project.scss */
+#projects .project-container a {
+  text-decoration: none;
+}
+/* line 30, ../sass/components/_project.scss */
 #projects .project-container .project-info {
   opacity: 0;
   height: 100%;
   width: 100%;
   color: #fff;
+  border-radius: 6px;
+  font-size: 22px;
 }
-/* line 29, ../sass/components/_project.scss */
+/* line 38, ../sass/components/_project.scss */
+#projects .project-container .project-info .name {
+  padding-top: 20px;
+}
+/* line 43, ../sass/components/_project.scss */
 #projects .project-container:hover .project-info {
   opacity: 1;
   transition: opacity .2s ease-in;

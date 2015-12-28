@@ -33,13 +33,14 @@
             <div class="row">
             <div ng-repeat="p in projects" class="six columns">
               <div class="project-container" style="background: url({{ p.img }});">
-                <p class="project-info">
-                  <span class="name">{{ p.name }}</span>
-                  <span>{{ p.date }}</span>
-                  <span>{{ p.tools }}</span>
-                  <span>{{ p.affiliation }}</span>
-                  <a href="http://{{ p.link }}" target="_blank">{{ p.name }}</a>
-                </p>
+                <a href="http://{{ p.link }}" target="_blank">
+                  <p class="project-info">
+                    <span class="name">{{ p.name }}</span>
+                    <span>{{ p.date }}</span>
+                    <span>{{ p.tools }}</span>
+                    <span>Affiliation: {{ p.affiliation }}</span>
+                  </p>
+                </a>
               </div>
             </div>
           </div>

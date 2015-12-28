@@ -15,15 +15,29 @@
     border-radius: 6px;
     margin-top: 15px;
     margin-bottom: 15px;
-    border: 1px solid;
     text-align: center;
+    -webkit-box-shadow: 3px 3px 10px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 10px -1px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 10px -1px rgba(0,0,0,0.75);
 
+    span {
+      display: block;
+    }
+    a {
+      text-decoration: none;
+    }
 
   .project-info {
       opacity: 0;
       height: 100%;
       width: 100%;
       color: #fff;
+      border-radius: 6px;
+      font-size: 22px;
+
+      .name {
+        padding-top: 20px;
+      }
     }
 
     &:hover .project-info {
