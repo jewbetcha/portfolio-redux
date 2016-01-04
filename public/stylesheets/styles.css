@@ -73,8 +73,8 @@ body {
   /* line 17, ../sass/components/_project.scss */
   #projects .project-container {
     height: 215px;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 }
 /* line 36, ../sass/components/_project.scss */
@@ -103,7 +103,16 @@ body {
 #projects .project-container .project-info .date {
   font-style: italic;
 }
-/* line 60, ../sass/components/_project.scss */
+@media only screen and (max-width: 960px) {
+  /* line 43, ../sass/components/_project.scss */
+  #projects .project-container .project-info {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+  }
+}
+/* line 69, ../sass/components/_project.scss */
 #projects .project-container:hover .project-info {
   opacity: 1;
   transition: opacity .2s ease-in;

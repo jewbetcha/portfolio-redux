@@ -29,8 +29,8 @@
 
     @include mobile {
       height: 215px;
-      margin-left: 1%;
-      margin-right: 1%;
+      margin-left: 2%;
+      margin-right: 2%;
     }
 
     span {
@@ -55,6 +55,15 @@
       .date {
         font-style: italic;
       }
+
+      // Keep overlay on mobile cause no hover
+
+      @include mobile_tablet {
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.4);
+        background: rgba(0, 0, 0, 0.4);
+        color: #fff;
+      }
     }
 
     &:hover .project-info {
@@ -64,6 +73,5 @@
       background: rgba(0, 0, 0, 0.5);
       color: #fff;
     }
-
   }
 }
