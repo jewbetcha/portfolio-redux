@@ -37,6 +37,11 @@ body {
   height: 28px;
   margin: 0 5px;
 }
+/* line 25, ../sass/components/_nav.scss */
+#info .twitter {
+  height: 28px;
+  margin: 0 5px;
+}
 
 /* line 2, ../sass/components/_project.scss */
 #projects {
