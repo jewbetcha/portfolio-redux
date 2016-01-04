@@ -58,6 +58,8 @@ body {
   -webkit-box-shadow: 3px 3px 10px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 3px 3px 10px -1px rgba(0, 0, 0, 0.75);
   box-shadow: 3px 3px 10px -1px rgba(0, 0, 0, 0.75);
+  background-size: 80% !important;
+  background-color: #fff !important;
 }
 @media only screen and (max-width: 480px) {
   /* line 17, ../sass/components/_project.scss */
@@ -67,15 +69,15 @@ body {
     margin-right: 1%;
   }
 }
-/* line 33, ../sass/components/_project.scss */
+/* line 36, ../sass/components/_project.scss */
 #projects .project-container span {
   display: block;
 }
-/* line 36, ../sass/components/_project.scss */
+/* line 39, ../sass/components/_project.scss */
 #projects .project-container a {
   text-decoration: none;
 }
-/* line 40, ../sass/components/_project.scss */
+/* line 43, ../sass/components/_project.scss */
 #projects .project-container .project-info {
   opacity: 0;
   height: 100%;
@@ -84,11 +86,16 @@ body {
   border-radius: 6px;
   font-size: 22px;
 }
-/* line 48, ../sass/components/_project.scss */
+/* line 51, ../sass/components/_project.scss */
 #projects .project-container .project-info .name {
   padding-top: 20px;
+  font-weight: bold;
 }
-/* line 53, ../sass/components/_project.scss */
+/* line 55, ../sass/components/_project.scss */
+#projects .project-container .project-info .date {
+  font-style: italic;
+}
+/* line 60, ../sass/components/_project.scss */
 #projects .project-container:hover .project-info {
   opacity: 1;
   transition: opacity .2s ease-in;

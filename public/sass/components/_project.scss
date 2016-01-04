@@ -24,6 +24,9 @@
     -moz-box-shadow: 3px 3px 10px -1px rgba(0,0,0,0.75);
     box-shadow: 3px 3px 10px -1px rgba(0,0,0,0.75);
 
+    background-size: 80% !important;
+    background-color: #fff !important;
+
     @include mobile {
       height: 215px;
       margin-left: 1%;
@@ -47,6 +50,10 @@
 
       .name {
         padding-top: 20px;
+        font-weight: bold;
+      }
+      .date {
+        font-style: italic;
       }
     }
 

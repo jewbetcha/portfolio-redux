@@ -36,12 +36,12 @@
             <h1>My Work</h1>
             <div class="row">
             <div ng-repeat="p in projects" class="six columns">
-              <div class="project-container" style="background: url({{ p.img }});">
+              <div id="{{ p.name }}" class="project-container" style="background: url({{ p.img }}) no-repeat center;">
                 <a href="http://{{ p.link }}" target="_blank">
                   <p class="project-info">
                     <span class="name">{{ p.name }}</span>
-                    <span>{{ p.date }}</span>
-                    <span>{{ p.tools }}</span>
+                    <span class="date">{{ p.date }}</span>
+                    <span class="tools">{{ p.tools }}</span>
                     <span>Affiliation: {{ p.affiliation }}</span>
                   </p>
                 </a>
