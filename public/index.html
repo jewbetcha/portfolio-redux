@@ -34,10 +34,17 @@
           <img src="img/linkedin.png" class="social" />
         </div>
       </div>
+      <div class="row">
+        <div class="four columns">
+          <ul id="info">
+            <li>hello@colemanrollins.io</li>
+            <li>Social icons</li>
+          </ul>
+        </div>
       <div id="projects">
-            <h1>My Work</h1>
-            <div class="row">
-            <div ng-repeat="p in projects" class="six columns">
+        <div class="eight columns">
+            <h4>recent work</h4>
+            <div ng-repeat="p in projects" class="">
               <div id="{{ p.name }}" class="project-container" style="background: url({{ p.img }}) no-repeat center;">
                 <a href="http://{{ p.link }}" target="_blank">
                   <p class="project-info">
@@ -50,6 +57,7 @@
               </div>
             </div>
           </div>
+        </div>
       </div>
 
     </div>

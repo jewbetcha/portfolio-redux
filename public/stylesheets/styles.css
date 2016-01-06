@@ -1,14 +1,15 @@
-/* line 2, ../sass/components/_global.scss */
+/* line 7, ../sass/components/_global.scss */
 .container {
   width: 100%;
   padding: 0;
   max-width: 1280px;
 }
 
-/* line 8, ../sass/components/_global.scss */
+/* line 13, ../sass/components/_global.scss */
 body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #F2F2F2;
+  background-color: #fff;
+  color: #5E53FB;
 }
 
 /* line 3, ../sass/components/_nav.scss */
@@ -47,81 +48,61 @@ body {
 #projects {
   text-align: center;
 }
-/* line 6, ../sass/components/_project.scss */
-#projects .columns:nth-child(odd) {
-  margin-left: 0;
-}
-/* line 9, ../sass/components/_project.scss */
-#projects .columns:nth-child(even) {
-  margin-left: 4%;
-}
-@media only screen and (max-width: 480px) {
-  /* line 9, ../sass/components/_project.scss */
-  #projects .columns:nth-child(even) {
-    margin-left: 0;
-  }
-}
-/* line 17, ../sass/components/_project.scss */
+/* line 5, ../sass/components/_project.scss */
 #projects .project-container {
   height: 275px;
-  border-radius: 6px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  border: 1px dotted #5E53FB;
   text-align: center;
-  -webkit-box-shadow: 3px 3px 10px -1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 3px 3px 10px -1px rgba(0, 0, 0, 0.75);
-  box-shadow: 3px 3px 10px -1px rgba(0, 0, 0, 0.75);
-  background-size: 80% !important;
+  background-size: 35% !important;
   background-color: #fff !important;
 }
 @media only screen and (max-width: 480px) {
-  /* line 17, ../sass/components/_project.scss */
+  /* line 5, ../sass/components/_project.scss */
   #projects .project-container {
     height: 215px;
     margin-left: 2%;
     margin-right: 2%;
   }
 }
-/* line 36, ../sass/components/_project.scss */
+/* line 19, ../sass/components/_project.scss */
 #projects .project-container span {
   display: block;
 }
-/* line 39, ../sass/components/_project.scss */
+/* line 22, ../sass/components/_project.scss */
 #projects .project-container a {
   text-decoration: none;
 }
-/* line 43, ../sass/components/_project.scss */
+/* line 26, ../sass/components/_project.scss */
 #projects .project-container .project-info {
   opacity: 0;
   height: 100%;
   width: 100%;
   color: #fff;
-  border-radius: 6px;
   font-size: 22px;
 }
-/* line 51, ../sass/components/_project.scss */
+/* line 33, ../sass/components/_project.scss */
 #projects .project-container .project-info .name {
   padding-top: 20px;
   font-weight: bold;
 }
-/* line 55, ../sass/components/_project.scss */
+/* line 37, ../sass/components/_project.scss */
 #projects .project-container .project-info .date {
   font-style: italic;
 }
 @media only screen and (max-width: 960px) {
-  /* line 43, ../sass/components/_project.scss */
+  /* line 26, ../sass/components/_project.scss */
   #projects .project-container .project-info {
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.4);
-    background: rgba(0, 0, 0, 0.4);
+    background-color: rgba(94, 83, 251, 0.5);
+    background: rgba(94, 83, 251, 0.5);
     color: #fff;
   }
 }
-/* line 69, ../sass/components/_project.scss */
+/* line 51, ../sass/components/_project.scss */
 #projects .project-container:hover .project-info {
   opacity: 1;
   transition: opacity .2s ease-in;
-  background-color: rgba(0, 0, 0, 0.5);
-  background: rgba(0, 0, 0, 0.5);
+  background-color: rgba(94, 83, 251, 0.6);
+  background: rgba(94, 83, 251, 0.6);
   color: #fff;
 }
