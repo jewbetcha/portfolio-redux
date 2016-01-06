@@ -12,6 +12,38 @@ body {
   color: #5E53FB;
 }
 
+@keyframes grow {
+  0% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  4.3% {
+    transform: matrix3d(1.01, 0, 0, 0, 0, 1.026, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  8.61% {
+    transform: matrix3d(1.011, 0, 0, 0, 0, 1.044, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  12.91% {
+    transform: matrix3d(1.012, 0, 0, 0, 0, 1.053, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  17.22% {
+    transform: matrix3d(1.015, 0, 0, 0, 0, 1.055, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  28.33% {
+    transform: matrix3d(1.016, 0, 0, 0, 0, 1.051, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  39.44% {
+    transform: matrix3d(1.017, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  61.66% {
+    transform: matrix3d(1.018, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  83.98% {
+    transform: matrix3d(1.019, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+  100% {
+    transform: matrix3d(1.02, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+}
 /* line 3, ../sass/components/_nav.scss */
 #nav {
   text-align: center;
@@ -23,22 +55,26 @@ body {
   border-radius: 50%;
   margin-top: 20px;
 }
+/* line 13, ../sass/components/_nav.scss */
+#nav .columns {
+  margin-left: 0;
+}
 
-/* line 14, ../sass/components/_nav.scss */
+/* line 18, ../sass/components/_nav.scss */
 #info {
   text-align: center;
   margin-bottom: 10px;
 }
-/* line 18, ../sass/components/_nav.scss */
+/* line 22, ../sass/components/_nav.scss */
 #info h4 {
   margin-bottom: 0.5rem;
 }
-/* line 21, ../sass/components/_nav.scss */
+/* line 25, ../sass/components/_nav.scss */
 #info .social {
   height: 28px;
   margin: 0 5px;
 }
-/* line 25, ../sass/components/_nav.scss */
+/* line 29, ../sass/components/_nav.scss */
 #info .twitter {
   height: 28px;
   margin: 0 5px;
@@ -49,48 +85,55 @@ body {
   text-align: center;
 }
 /* line 5, ../sass/components/_project.scss */
+#projects h4 {
+  font-weight: bold;
+}
+/* line 9, ../sass/components/_project.scss */
 #projects .project-container {
   height: 275px;
   border: 1px dotted #5E53FB;
+  border-bottom: none;
   text-align: center;
   background-size: 35% !important;
   background-color: #fff !important;
 }
 @media only screen and (max-width: 480px) {
-  /* line 5, ../sass/components/_project.scss */
+  /* line 9, ../sass/components/_project.scss */
   #projects .project-container {
     height: 215px;
     margin-left: 2%;
     margin-right: 2%;
   }
 }
-/* line 19, ../sass/components/_project.scss */
+/* line 24, ../sass/components/_project.scss */
 #projects .project-container span {
   display: block;
+  padding-left: 60px;
 }
-/* line 22, ../sass/components/_project.scss */
+/* line 28, ../sass/components/_project.scss */
 #projects .project-container a {
   text-decoration: none;
 }
-/* line 26, ../sass/components/_project.scss */
+/* line 32, ../sass/components/_project.scss */
 #projects .project-container .project-info {
   opacity: 0;
   height: 100%;
   width: 100%;
   color: #fff;
+  text-align: left;
   font-size: 22px;
 }
-/* line 33, ../sass/components/_project.scss */
+/* line 40, ../sass/components/_project.scss */
 #projects .project-container .project-info .name {
-  padding-top: 20px;
+  padding-top: 50px;
   font-weight: bold;
 }
-/* line 37, ../sass/components/_project.scss */
+/* line 44, ../sass/components/_project.scss */
 #projects .project-container .project-info .date {
   font-style: italic;
 }
 @media only screen and (max-width: 960px) {
-  /* line 26, ../sass/components/_project.scss */
+  /* line 32, ../sass/components/_project.scss */
   #projects .project-container .project-info {
     opacity: 1;
     background-color: rgba(94, 83, 251, 0.5);
@@ -98,11 +141,12 @@ body {
     color: #fff;
   }
 }
-/* line 51, ../sass/components/_project.scss */
+/* line 58, ../sass/components/_project.scss */
 #projects .project-container:hover .project-info {
   opacity: 1;
   transition: opacity .2s ease-in;
-  background-color: rgba(94, 83, 251, 0.6);
-  background: rgba(94, 83, 251, 0.6);
+  background-color: rgba(94, 83, 251, 0.7);
+  background: rgba(94, 83, 251, 0.7);
   color: #fff;
+  animation: grow 1000ms linear both;
 }
