@@ -14,6 +14,10 @@
       font-weight: bold;
       margin-bottom: 0.5rem;
     }
+
+    @include mobile_tablet {
+      border: none;
+    }
   }
 
   .pic {
@@ -21,6 +25,10 @@
     height: auto;
     border-radius: 50%;
     margin-top: 20px;
+
+    @include mobile_tablet {
+      width: 50%;
+    }
   }
 
   .columns {
@@ -28,7 +36,9 @@
   }
 
   #left {
-    //border-bottom: $border;
+    @include mobile_tablet {
+      text-align: center;
+    }
   }
 
   #links {
@@ -36,10 +46,27 @@
     text-align: left;
     padding: 20px 80px;
     font-weight: bold;
+
+    @include mobile_tablet {
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    li {
+      @include mobile_tablet {
+          float: left;
+          padding: 0 10px;
+      }
+    }
   }
   #blurb {
     padding: 0 80px;
     text-align: left;
+
+    @include mobile_tablet {
+      text-align: center;
+      padding: 0 40px;
+    }
   }
 }
 

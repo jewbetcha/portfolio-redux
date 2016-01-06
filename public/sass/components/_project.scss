@@ -20,14 +20,15 @@
     background-color: #fff !important;
 
     @include mobile {
-      height: 215px;
-      margin-left: 2%;
-      margin-right: 2%;
+      
     }
 
     span {
       display: block;
       padding-left: 60px;
+      -webkit-font-smoothing: subpixel-antialiased;
+      backface-visibility: hidden;
+      transform: translateZ(0);
     }
     a {
       text-decoration: none;
@@ -40,6 +41,11 @@
       color: #fff;
       text-align: left;
       font-size: 22px;
+      -webkit-font-smoothing: subpixel-antialiased;
+      backface-visibility: hidden;
+      transform: translateZ(0);
+      -webkit-filter: blur(0);
+
 
       .name {
         padding-top: 50px;
@@ -65,6 +71,14 @@
       background-color: rgba(94, 83, 251, 0.7);
       background: rgba(94, 83, 251, 0.7);
       color: #fff;
+      backface-visibility: hidden;
+      transform: translateZ(0);
+      -webkit-perspective: 1000;
+
+      span {
+        -webkit-transform: translate3d(0,0,0) !important;
+        transform: translate3d(0,0,0) !important;
+      }
 
       // grow animation
       animation: grow 900ms linear both;
