@@ -4,12 +4,18 @@
   text-align: center;
 
   #me {
+    border: $border;
+    border-top: 0;
+    border-bottom: 0;
+    padding-bottom: 15px;
+
     h2,
     h5 {
       font-weight: bold;
       margin-bottom: 0.5rem;
     }
   }
+
   .pic {
     width: 20%;
     height: auto;
@@ -19,6 +25,10 @@
 
   .columns {
     margin-left: 0;
+  }
+
+  #left {
+    //border-bottom: $border;
   }
 
   #links {

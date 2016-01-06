@@ -1,25 +1,22 @@
-/* line 7, ../sass/components/_global.scss */
+/* line 8, ../sass/components/_global.scss */
 .container {
   width: 100%;
   padding: 0;
   max-width: 1280px;
+  border-left: 1px dotted #5E53FB;
+  border-bottom: 1px dotted #5E53FB;
 }
 
-/* line 13, ../sass/components/_global.scss */
+/* line 16, ../sass/components/_global.scss */
 body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #fff;
   color: #5E53FB;
 }
 
-/* line 19, ../sass/components/_global.scss */
+/* line 22, ../sass/components/_global.scss */
 a {
   color: #5E53FB;
-}
-
-/* line 23, ../sass/components/_global.scss */
-.columns {
-  border: 1px dotted #5E53FB;
 }
 
 @keyframes grow {
@@ -58,37 +55,44 @@ a {
 #nav {
   text-align: center;
 }
-/* line 7, ../sass/components/_nav.scss */
+/* line 6, ../sass/components/_nav.scss */
+#nav #me {
+  border: 1px dotted #5E53FB;
+  border-top: 0;
+  border-bottom: 0;
+  padding-bottom: 15px;
+}
+/* line 12, ../sass/components/_nav.scss */
 #nav #me h2,
 #nav #me h5 {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-/* line 13, ../sass/components/_nav.scss */
+/* line 19, ../sass/components/_nav.scss */
 #nav .pic {
   width: 20%;
   height: auto;
   border-radius: 50%;
   margin-top: 20px;
 }
-/* line 20, ../sass/components/_nav.scss */
+/* line 26, ../sass/components/_nav.scss */
 #nav .columns {
   margin-left: 0;
 }
-/* line 24, ../sass/components/_nav.scss */
+/* line 34, ../sass/components/_nav.scss */
 #nav #links {
   list-style: none;
   text-align: left;
   padding: 20px 80px;
   font-weight: bold;
 }
-/* line 30, ../sass/components/_nav.scss */
+/* line 40, ../sass/components/_nav.scss */
 #nav #blurb {
   padding: 0 80px;
   text-align: left;
 }
 
-/* line 36, ../sass/components/_nav.scss */
+/* line 46, ../sass/components/_nav.scss */
 #info {
   text-align: left;
   margin-bottom: 10px;
@@ -96,12 +100,12 @@ a {
   font-weight: bold;
   padding: 20px 80px;
 }
-/* line 43, ../sass/components/_nav.scss */
+/* line 53, ../sass/components/_nav.scss */
 #info .social {
   height: 28px;
   margin: 0 5px;
 }
-/* line 47, ../sass/components/_nav.scss */
+/* line 57, ../sass/components/_nav.scss */
 #info .twitter {
   height: 28px;
   margin: 0 5px;
@@ -114,8 +118,12 @@ a {
 /* line 5, ../sass/components/_project.scss */
 #projects h4 {
   font-weight: bold;
+  border: 1px dotted #5E53FB;
+  margin-bottom: 0;
+  border-bottom: 0;
+  padding: 10px;
 }
-/* line 9, ../sass/components/_project.scss */
+/* line 13, ../sass/components/_project.scss */
 #projects .project-container {
   height: 275px;
   border: 1px dotted #5E53FB;
@@ -125,23 +133,23 @@ a {
   background-color: #fff !important;
 }
 @media only screen and (max-width: 480px) {
-  /* line 9, ../sass/components/_project.scss */
+  /* line 13, ../sass/components/_project.scss */
   #projects .project-container {
     height: 215px;
     margin-left: 2%;
     margin-right: 2%;
   }
 }
-/* line 24, ../sass/components/_project.scss */
+/* line 28, ../sass/components/_project.scss */
 #projects .project-container span {
   display: block;
   padding-left: 60px;
 }
-/* line 28, ../sass/components/_project.scss */
+/* line 32, ../sass/components/_project.scss */
 #projects .project-container a {
   text-decoration: none;
 }
-/* line 32, ../sass/components/_project.scss */
+/* line 36, ../sass/components/_project.scss */
 #projects .project-container .project-info {
   opacity: 0;
   height: 100%;
@@ -150,17 +158,17 @@ a {
   text-align: left;
   font-size: 22px;
 }
-/* line 40, ../sass/components/_project.scss */
+/* line 44, ../sass/components/_project.scss */
 #projects .project-container .project-info .name {
   padding-top: 50px;
   font-weight: bold;
 }
-/* line 44, ../sass/components/_project.scss */
+/* line 48, ../sass/components/_project.scss */
 #projects .project-container .project-info .date {
   font-style: italic;
 }
 @media only screen and (max-width: 960px) {
-  /* line 32, ../sass/components/_project.scss */
+  /* line 36, ../sass/components/_project.scss */
   #projects .project-container .project-info {
     opacity: 1;
     background-color: rgba(94, 83, 251, 0.5);
@@ -168,7 +176,7 @@ a {
     color: #fff;
   }
 }
-/* line 58, ../sass/components/_project.scss */
+/* line 62, ../sass/components/_project.scss */
 #projects .project-container:hover .project-info {
   opacity: 1;
   transition: opacity .2s ease-in;

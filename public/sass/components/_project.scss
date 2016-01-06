@@ -4,11 +4,15 @@
 
   h4 {
     font-weight: bold;
+    border: $border;
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding: 10px;
   }
 
   .project-container {
     height: 275px;
-    border: 1px dotted $blue;
+    border: $border;
     border-bottom: none;
     text-align: center;
 
