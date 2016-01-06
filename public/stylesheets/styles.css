@@ -12,6 +12,16 @@ body {
   color: #5E53FB;
 }
 
+/* line 19, ../sass/components/_global.scss */
+a {
+  color: #5E53FB;
+}
+
+/* line 23, ../sass/components/_global.scss */
+.columns {
+  border: 1px dotted #5E53FB;
+}
+
 @keyframes grow {
   0% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
@@ -48,33 +58,50 @@ body {
 #nav {
   text-align: center;
 }
-/* line 6, ../sass/components/_nav.scss */
-#nav .me {
+/* line 7, ../sass/components/_nav.scss */
+#nav #me h2,
+#nav #me h5 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+/* line 13, ../sass/components/_nav.scss */
+#nav .pic {
   width: 20%;
   height: auto;
   border-radius: 50%;
   margin-top: 20px;
 }
-/* line 13, ../sass/components/_nav.scss */
+/* line 20, ../sass/components/_nav.scss */
 #nav .columns {
   margin-left: 0;
 }
+/* line 24, ../sass/components/_nav.scss */
+#nav #links {
+  list-style: none;
+  text-align: left;
+  padding: 20px 80px;
+  font-weight: bold;
+}
+/* line 30, ../sass/components/_nav.scss */
+#nav #blurb {
+  padding: 0 80px;
+  text-align: left;
+}
 
-/* line 18, ../sass/components/_nav.scss */
+/* line 36, ../sass/components/_nav.scss */
 #info {
-  text-align: center;
+  text-align: left;
   margin-bottom: 10px;
+  list-style: none;
+  font-weight: bold;
+  padding: 20px 80px;
 }
-/* line 22, ../sass/components/_nav.scss */
-#info h4 {
-  margin-bottom: 0.5rem;
-}
-/* line 25, ../sass/components/_nav.scss */
+/* line 43, ../sass/components/_nav.scss */
 #info .social {
   height: 28px;
   margin: 0 5px;
 }
-/* line 29, ../sass/components/_nav.scss */
+/* line 47, ../sass/components/_nav.scss */
 #info .twitter {
   height: 28px;
   margin: 0 5px;
@@ -148,5 +175,5 @@ body {
   background-color: rgba(94, 83, 251, 0.7);
   background: rgba(94, 83, 251, 0.7);
   color: #fff;
-  animation: grow 1000ms linear both;
+  animation: grow 900ms linear both;
 }

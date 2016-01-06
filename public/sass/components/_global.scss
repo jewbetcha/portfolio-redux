@@ -16,8 +16,12 @@ body {
   color: $blue;
 }
 
+a {
+  color: $blue;
+}
+
 .columns {
-  //border: 1px dotted $blue;
+  border: 1px dotted $blue;
 }
 
 @keyframes grow {
