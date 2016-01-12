@@ -4,7 +4,7 @@
   text-align: center;
 
   #me {
-    border: $border;
+    //border: $border;
     border-top: 0;
     border-bottom: 0;
     padding-bottom: 15px;
@@ -44,8 +44,10 @@
   #links {
     list-style: none;
     text-align: left;
-    padding: 20px 80px;
+    padding: 20px 0;
     font-weight: bold;
+    margin-left: 5%;
+    margin-bottom: 0;
 
     @include mobile_tablet {
       padding: 20px 40px;
@@ -60,8 +62,9 @@
     }
   }
   #blurb {
-    padding: 0 80px;
+    padding-right: 20px;
     text-align: left;
+    margin-left: 5%;
 
     @include mobile_tablet {
       text-align: center;
@@ -73,9 +76,11 @@
 #info {
   text-align: left;
   margin-bottom: 10px;
+  margin-left: 5%;
   list-style: none;
   font-weight: bold;
-  padding: 20px 80px;
+  padding: 20px 0;
+
 
   .social {
     height: 28px;

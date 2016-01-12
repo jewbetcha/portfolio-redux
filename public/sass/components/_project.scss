@@ -2,6 +2,12 @@
 #projects {
   text-align: center;
 
+  .columns {
+    @include desktop {
+      float: right;
+    }
+  }
+
   h4 {
     font-weight: bold;
     border: $border;
@@ -10,6 +16,9 @@
     padding: 10px;
   }
 
+  .project {
+    //width: 80%;
+  }
   .project-container {
     height: 275px;
     border: $border;
@@ -20,7 +29,7 @@
     background-color: #fff !important;
 
     @include mobile {
-      
+
     }
 
     span {

@@ -27,6 +27,10 @@
           <p id="blurb">
             I develop and lead web projects for <a href="http://50000feet.com" target="_blank">50,000 Feet</a>. You can find me building cool things on the internet, eating ramen and riding my bike. Feel free to get in touch!
           </p>
+          <ul id="info">
+            <li><a href="mailto:hello@colemanrollins.io">hello@colemanrollins.io</a></li>
+            <li>Social icons</li>
+          </ul>
         </div>
         <div class="eight columns" id="me">
           <img src="img/me.jpg" class="pic" />
@@ -43,29 +47,23 @@
         </div>
       </div> -->
       <div class="row">
-        <div class="four columns">
-          <ul id="info">
-            <li><a href="mailto:hello@colemanrollins.io">hello@colemanrollins.io</a></li>
-            <li>Social icons</li>
-          </ul>
-        </div>
-      <div id="projects">
-        <div class="eight columns">
-            <h4>recent work</h4>
-            <div ng-repeat="p in projects" class="">
-              <div id="{{ p.name }}" class="project-container" style="background: url({{ p.img }}) no-repeat center;">
-                <a href="http://{{ p.link }}" target="_blank">
-                  <p class="project-info">
-                    <span class="name">{{ p.name }}</span>
-                    <span class="date">{{ p.date }}</span>
-                    <span class="tools">{{ p.tools }}</span>
-                    <span>Affiliation: {{ p.affiliation }}</span>
-                  </p>
-                </a>
+        <div id="projects">
+          <div class="twelve columns">
+              <h4>recent work</h4>
+              <div ng-repeat="p in projects" class="project">
+                <div id="{{ p.name }}" class="project-container" style="background: url({{ p.img }}) no-repeat center;">
+                  <a href="http://{{ p.link }}" target="_blank">
+                    <p class="project-info">
+                      <span class="name">{{ p.name }}</span>
+                      <span class="date">{{ p.date }}</span>
+                      <span class="tools">{{ p.tools }}</span>
+                      <span>Affiliation: {{ p.affiliation }}</span>
+                    </p>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
       </div>
 
     </div>

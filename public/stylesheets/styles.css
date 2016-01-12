@@ -2,9 +2,7 @@
 .container {
   width: 100%;
   padding: 0;
-  max-width: 1280px;
-  border-left: 1px dotted #5E53FB;
-  border-bottom: 1px dotted #5E53FB;
+  max-width: 1140px;
 }
 
 /* line 16, ../sass/components/_global.scss */
@@ -57,7 +55,6 @@ a {
 }
 /* line 6, ../sass/components/_nav.scss */
 #nav #me {
-  border: 1px dotted #5E53FB;
   border-top: 0;
   border-bottom: 0;
   padding-bottom: 15px;
@@ -101,8 +98,10 @@ a {
 #nav #links {
   list-style: none;
   text-align: left;
-  padding: 20px 80px;
+  padding: 20px 0;
   font-weight: bold;
+  margin-left: 5%;
+  margin-bottom: 0;
 }
 @media only screen and (max-width: 960px) {
   /* line 44, ../sass/components/_nav.scss */
@@ -112,39 +111,41 @@ a {
   }
 }
 @media only screen and (max-width: 960px) {
-  /* line 55, ../sass/components/_nav.scss */
+  /* line 57, ../sass/components/_nav.scss */
   #nav #links li {
     float: left;
     padding: 0 10px;
   }
 }
-/* line 62, ../sass/components/_nav.scss */
+/* line 64, ../sass/components/_nav.scss */
 #nav #blurb {
-  padding: 0 80px;
+  padding-right: 20px;
   text-align: left;
+  margin-left: 5%;
 }
 @media only screen and (max-width: 960px) {
-  /* line 62, ../sass/components/_nav.scss */
+  /* line 64, ../sass/components/_nav.scss */
   #nav #blurb {
     text-align: center;
     padding: 0 40px;
   }
 }
 
-/* line 73, ../sass/components/_nav.scss */
+/* line 76, ../sass/components/_nav.scss */
 #info {
   text-align: left;
   margin-bottom: 10px;
+  margin-left: 5%;
   list-style: none;
   font-weight: bold;
-  padding: 20px 80px;
+  padding: 20px 0;
 }
-/* line 80, ../sass/components/_nav.scss */
+/* line 85, ../sass/components/_nav.scss */
 #info .social {
   height: 28px;
   margin: 0 5px;
 }
-/* line 84, ../sass/components/_nav.scss */
+/* line 89, ../sass/components/_nav.scss */
 #info .twitter {
   height: 28px;
   margin: 0 5px;
@@ -154,7 +155,13 @@ a {
 #projects {
   text-align: center;
 }
-/* line 5, ../sass/components/_project.scss */
+@media only screen and (min-width: 961px) {
+  /* line 5, ../sass/components/_project.scss */
+  #projects .columns {
+    float: right;
+  }
+}
+/* line 11, ../sass/components/_project.scss */
 #projects h4 {
   font-weight: bold;
   border: 1px dotted #5E53FB;
@@ -162,7 +169,7 @@ a {
   border-bottom: 0;
   padding: 10px;
 }
-/* line 13, ../sass/components/_project.scss */
+/* line 22, ../sass/components/_project.scss */
 #projects .project-container {
   height: 275px;
   border: 1px dotted #5E53FB;
@@ -171,7 +178,7 @@ a {
   background-size: 35% !important;
   background-color: #fff !important;
 }
-/* line 26, ../sass/components/_project.scss */
+/* line 35, ../sass/components/_project.scss */
 #projects .project-container span {
   display: block;
   padding-left: 60px;
@@ -179,11 +186,11 @@ a {
   backface-visibility: hidden;
   transform: translateZ(0);
 }
-/* line 33, ../sass/components/_project.scss */
+/* line 42, ../sass/components/_project.scss */
 #projects .project-container a {
   text-decoration: none;
 }
-/* line 37, ../sass/components/_project.scss */
+/* line 46, ../sass/components/_project.scss */
 #projects .project-container .project-info {
   opacity: 0;
   height: 100%;
@@ -196,17 +203,17 @@ a {
   transform: translateZ(0);
   -webkit-filter: blur(0);
 }
-/* line 50, ../sass/components/_project.scss */
+/* line 59, ../sass/components/_project.scss */
 #projects .project-container .project-info .name {
   padding-top: 50px;
   font-weight: bold;
 }
-/* line 54, ../sass/components/_project.scss */
+/* line 63, ../sass/components/_project.scss */
 #projects .project-container .project-info .date {
   font-style: italic;
 }
 @media only screen and (max-width: 960px) {
-  /* line 37, ../sass/components/_project.scss */
+  /* line 46, ../sass/components/_project.scss */
   #projects .project-container .project-info {
     opacity: 1;
     background-color: rgba(94, 83, 251, 0.5);
@@ -214,7 +221,7 @@ a {
     color: #fff;
   }
 }
-/* line 68, ../sass/components/_project.scss */
+/* line 77, ../sass/components/_project.scss */
 #projects .project-container:hover .project-info {
   opacity: 1;
   transition: opacity .2s ease-in;
@@ -226,7 +233,7 @@ a {
   -webkit-perspective: 1000;
   animation: grow 900ms linear both;
 }
-/* line 78, ../sass/components/_project.scss */
+/* line 87, ../sass/components/_project.scss */
 #projects .project-container:hover .project-info span {
   -webkit-transform: translate3d(0, 0, 0) !important;
   transform: translate3d(0, 0, 0) !important;
