@@ -26,10 +26,11 @@
     text-align: center;
 
     background-size: 35% !important;
-    background-color: #fff !important;
+    background-color: $gray;
 
-    @include mobile {
-
+    @include mobile_tablet {
+      background-size: 47% !important;
+      background-position-x: 90% !important;
     }
 
     span {
@@ -38,6 +39,10 @@
       -webkit-font-smoothing: subpixel-antialiased;
       backface-visibility: hidden;
       transform: translateZ(0);
+
+      @include mobile_tablet {
+        padding-left: 20px;
+      }
     }
     a {
       text-decoration: none;
@@ -55,6 +60,11 @@
       transform: translateZ(0);
       -webkit-filter: blur(0);
 
+      @include mobile_tablet {
+        width: 50%;
+        font-size: 18px;
+      }
+
 
       .name {
         padding-top: 50px;
@@ -68,29 +78,37 @@
 
       @include mobile_tablet {
         opacity: 1;
-        background-color: rgba(94, 83, 251, 0.5);
-        background: rgba(94, 83, 251, 0.5);
-        color: #fff;
+        //background-color: rgba(0, 129, 175, 0.7);
+        //background: rgba(0, 129, 175, 0.7);
+        color: $brown;
       }
     }
 
     &:hover .project-info {
       opacity: 1;
       transition: opacity .2s ease-in;
-      background-color: rgba(94, 83, 251, 0.7);
-      background: rgba(94, 83, 251, 0.7);
+      background-color: rgba(0, 129, 175, 0.7);
+      background: rgba(0, 129, 175, 0.7);
       color: #fff;
       backface-visibility: hidden;
       transform: translateZ(0);
       -webkit-perspective: 1000;
 
+      @include mobile_tablet {
+        background-color: transparent;
+        background: transparent;
+        color: $brown;
+      }
       span {
         -webkit-transform: translate3d(0,0,0) !important;
         transform: translate3d(0,0,0) !important;
       }
 
       // grow animation
-      animation: grow 900ms linear both;
+      @include desktop {
+        animation: grow 900ms linear both;
+      }
+
     }
   }
 }

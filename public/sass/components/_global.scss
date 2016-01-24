@@ -2,8 +2,10 @@
 
 // Some variables
 $white: #fff;
+$brown: #483D3F;
 $blue: #5E53FB;
-$border: 1px dotted $blue;
+$border: 1px dotted $brown;
+$gray: #F6F6F6;
 
 .container {
   width: 100%;
@@ -15,12 +17,12 @@ $border: 1px dotted $blue;
 
 body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: $white;
-  color: $blue;
+  background-color: $gray;
+  color: $brown;
 }
 
 a {
-  color: $blue;
+  color: $brown;
 }
 
 .columns {
