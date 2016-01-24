@@ -31,6 +31,8 @@
     @include mobile_tablet {
       background-size: 47% !important;
       background-position-x: 90% !important;
+      border-right: none;
+      border-left: none;
     }
 
     span {

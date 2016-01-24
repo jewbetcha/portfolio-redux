@@ -16,6 +16,10 @@ body {
 a {
   color: #483D3F;
 }
+/* line 27, ../sass/components/_global.scss */
+a:hover {
+  color: #0081AF;
+}
 
 @keyframes grow {
   0% {
@@ -158,9 +162,11 @@ a {
   #projects .project-container {
     background-size: 47% !important;
     background-position-x: 90% !important;
+    border-right: none;
+    border-left: none;
   }
 }
-/* line 36, ../sass/components/_project.scss */
+/* line 38, ../sass/components/_project.scss */
 #projects .project-container span {
   display: block;
   padding-left: 60px;
@@ -169,16 +175,16 @@ a {
   transform: translateZ(0);
 }
 @media only screen and (max-width: 960px) {
-  /* line 36, ../sass/components/_project.scss */
+  /* line 38, ../sass/components/_project.scss */
   #projects .project-container span {
     padding-left: 20px;
   }
 }
-/* line 47, ../sass/components/_project.scss */
+/* line 49, ../sass/components/_project.scss */
 #projects .project-container a {
   text-decoration: none;
 }
-/* line 51, ../sass/components/_project.scss */
+/* line 53, ../sass/components/_project.scss */
 #projects .project-container .project-info {
   opacity: 0;
   height: 100%;
@@ -192,29 +198,29 @@ a {
   -webkit-filter: blur(0);
 }
 @media only screen and (max-width: 960px) {
-  /* line 51, ../sass/components/_project.scss */
+  /* line 53, ../sass/components/_project.scss */
   #projects .project-container .project-info {
     width: 50%;
     font-size: 18px;
   }
 }
-/* line 69, ../sass/components/_project.scss */
+/* line 71, ../sass/components/_project.scss */
 #projects .project-container .project-info .name {
   padding-top: 50px;
   font-weight: bold;
 }
-/* line 73, ../sass/components/_project.scss */
+/* line 75, ../sass/components/_project.scss */
 #projects .project-container .project-info .date {
   font-style: italic;
 }
 @media only screen and (max-width: 960px) {
-  /* line 51, ../sass/components/_project.scss */
+  /* line 53, ../sass/components/_project.scss */
   #projects .project-container .project-info {
     opacity: 1;
     color: #483D3F;
   }
 }
-/* line 87, ../sass/components/_project.scss */
+/* line 89, ../sass/components/_project.scss */
 #projects .project-container:hover .project-info {
   opacity: 1;
   transition: opacity .2s ease-in;
@@ -226,20 +232,20 @@ a {
   -webkit-perspective: 1000;
 }
 @media only screen and (max-width: 960px) {
-  /* line 87, ../sass/components/_project.scss */
+  /* line 89, ../sass/components/_project.scss */
   #projects .project-container:hover .project-info {
     background-color: transparent;
     background: transparent;
     color: #483D3F;
   }
 }
-/* line 102, ../sass/components/_project.scss */
+/* line 104, ../sass/components/_project.scss */
 #projects .project-container:hover .project-info span {
   -webkit-transform: translate3d(0, 0, 0) !important;
   transform: translate3d(0, 0, 0) !important;
 }
 @media only screen and (min-width: 961px) {
-  /* line 87, ../sass/components/_project.scss */
+  /* line 89, ../sass/components/_project.scss */
   #projects .project-container:hover .project-info {
     animation: grow 900ms linear both;
   }

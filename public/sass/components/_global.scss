@@ -3,7 +3,7 @@
 // Some variables
 $white: #fff;
 $brown: #483D3F;
-$blue: #5E53FB;
+$blue: #0081AF;
 $border: 1px dotted $brown;
 $gray: #F6F6F6;
 
@@ -23,6 +23,10 @@ body {
 
 a {
   color: $brown;
+
+  &:hover {
+    color: $blue;
+  }
 }
 
 .columns {
