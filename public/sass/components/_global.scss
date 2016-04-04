@@ -19,6 +19,9 @@ body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: $gray;
   color: $brown;
+  animation-name: fadeIn;
+  opacity: 0;
+  animation: 0.5s;
 }
 
 a {
@@ -44,4 +47,8 @@ a {
   61.66% { transform: matrix3d(1.015, 0, 0, 0, 0, 1.015, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   83.98% { transform: matrix3d(1.015, 0, 0, 0, 0, 1.015, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   100% { transform: matrix3d(1.015, 0, 0, 0, 0, 1.015, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }

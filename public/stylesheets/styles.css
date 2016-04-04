@@ -10,13 +10,16 @@ body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #F6F6F6;
   color: #483D3F;
+  animation-name: fadeIn;
+  opacity: 0;
+  animation: 0.5s;
 }
 
-/* line 24, ../sass/components/_global.scss */
+/* line 27, ../sass/components/_global.scss */
 a {
   color: #483D3F;
 }
-/* line 27, ../sass/components/_global.scss */
+/* line 30, ../sass/components/_global.scss */
 a:hover {
   color: #0081AF;
 }
@@ -51,6 +54,14 @@ a:hover {
   }
   100% {
     transform: matrix3d(1.015, 0, 0, 0, 0, 1.015, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 /* line 3, ../sass/components/_nav.scss */
