@@ -66,7 +66,17 @@ a:hover {
 }
 /* line 55, ../sass/components/_global.scss */
 .letter {
-  margin: 0 10px;
+  margin: 0 2px;
+}
+
+/* line 58, ../sass/components/_global.scss */
+.letter-space {
+  display: none;
+}
+
+/* line 61, ../sass/components/_global.scss */
+.letter-7 {
+  margin-right: 10px;
 }
 
 /* line 3, ../sass/components/_nav.scss */

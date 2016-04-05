@@ -7,13 +7,13 @@
   // All the possible options (these are the default values)
   // Remember that every option (except individualDelays) can be defined as single value or array
   var options = {
-      size: 32,         // Font size, defined by the height of the letters (pixels)
-      weight: 12,         // Font weight (pixels)
-      rounded: false,    // Rounded letter endings
-      color: '#5F6062',  // Font color
-      duration: 0.4,       // Duration of the animation of each letter (seconds)
+      size: 55,         // Font size, defined by the height of the letters (pixels)
+      weight: 7,         // Font weight (pixels)
+      rounded: true,    // Rounded letter endings
+      color: '#483D3F',  // Font color
+      duration: 0.2,       // Duration of the animation of each letter (seconds)
       delay: 0.2,  // Delay animation among letters (seconds)
-      fade: 0,         // Fade effect duration (seconds)
+      fade: 0.2,         // Fade effect duration (seconds)
       easing: d3_ease.easeCubicInOut.ease,   // Easing function
       individualDelays: false,               // If false (default), every letter delay increase gradually, showing letters from left to right always. If you want to show letters in a disorderly way, set it to true, and define different delays for the desired letters.
   };
