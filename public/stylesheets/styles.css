@@ -64,6 +64,11 @@ a:hover {
     opacity: 1;
   }
 }
+/* line 55, ../sass/components/_global.scss */
+.letter {
+  margin: 0 10px;
+}
+
 /* line 3, ../sass/components/_nav.scss */
 #nav {
   text-align: center;
