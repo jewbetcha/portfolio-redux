@@ -26,9 +26,9 @@
       var body = $('body');
 
       var tl = new TimelineLite();
-      tl.to(body, 1, {
+      tl.to(body, 0.7, {
         opacity: 1,
-        y: 50
-      }, 0.3);
+        y: 25
+      }, 0.2);
   });
 })();
