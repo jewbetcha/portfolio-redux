@@ -164,27 +164,29 @@ a:hover {
   background: none;
   overflow: visible;
   -webkit-tap-highlight-color: transparent;
+  height: 50px;
+  width: 50px;
 }
-/* line 77, ../sass/components/_nav.scss */
+/* line 79, ../sass/components/_nav.scss */
 #social button svg {
   left: 25px;
   top: 25px;
 }
-/* line 82, ../sass/components/_nav.scss */
+/* line 84, ../sass/components/_nav.scss */
 #social span {
   display: block;
   font-size: 40px;
   margin: 5px 5px;
 }
-/* line 88, ../sass/components/_nav.scss */
+/* line 90, ../sass/components/_nav.scss */
 #social .fa-twitter:before {
   content: "\f099";
 }
-/* line 93, ../sass/components/_nav.scss */
+/* line 95, ../sass/components/_nav.scss */
 #social .fa-github:before {
   content: "\f09b";
 }
-/* line 98, ../sass/components/_nav.scss */
+/* line 100, ../sass/components/_nav.scss */
 #social .fa-linkedin-square:before {
   content: "\f08c";
 }
