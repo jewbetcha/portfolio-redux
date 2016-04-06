@@ -156,9 +156,24 @@ a:hover {
 }
 
 /* line 68, ../sass/components/_nav.scss */
-#social img {
-  width: 40px;
-  margin: 10px 5px;
+#social button {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  overflow: visible;
+  -webkit-tap-highlight-color: transparent;
+}
+/* line 77, ../sass/components/_nav.scss */
+#social span {
+  display: block;
+  font-size: 40px;
+  margin: 5px 5px;
+}
+/* line 82, ../sass/components/_nav.scss */
+#social span:before {
+  content: "\f099";
 }
 
 /* line 2, ../sass/components/_project.scss */
