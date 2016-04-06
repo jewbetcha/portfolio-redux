@@ -73,14 +73,30 @@
     background: none;
     overflow: visible;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+    svg {
+      left: 25px;
+      top: 25px;
+    }
   }
   span {
     display: block;
     font-size: 40px;
     margin: 5px 5px;
-
+  }
+  .fa-twitter {
     &:before {
       content: "\f099";
+    }
+  }
+  .fa-github {
+    &:before {
+      content: "\f09b";
+    }
+  }
+  .fa-linkedin-square {
+    &:before {
+      content: "\f08c";
     }
   }
 }

@@ -36,8 +36,8 @@
   		duration: 1500,
   		shape : 'circle',
   		fill : [ '#988ADE', '#DE8AA0', '#8AAEDE', '#8ADEAD', '#DEC58A', '#8AD1DE' ],
-  		x: '50%',
-  		y: '50%',
+  		x: '0%',
+  		y: '0%',
   		opacity: 0.6,
   		childOptions: { radius: {20:0} },
   		radius: {10:80},
@@ -56,8 +56,8 @@
   		stroke: '#988ADE',
   		strokeWidth: {15:0},
   		opacity: 0.6,
-  		x: '70%',
-  		y: '70%',
+  		x: '0%',
+  		y: '0%',
   		isRunLess: true,
   		easing: mojs.easing.bezier(0, 1, 0.5, 1)
   	}),
@@ -71,7 +71,7 @@
   	});
 
   // add tweens to timeline:
-  timeline.add(tween1);
+  timeline.add(tween1, tween2);
 
   // when clicking the button start the timeline/animation:
   icon.addEventListener('mouseenter', function() {
