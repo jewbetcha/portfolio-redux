@@ -173,20 +173,24 @@ a:hover {
   top: 25px;
 }
 /* line 84, ../sass/components/_nav.scss */
+#social a {
+  text-decoration: none;
+}
+/* line 87, ../sass/components/_nav.scss */
 #social span {
   display: block;
   font-size: 40px;
   margin: 5px 5px;
 }
-/* line 90, ../sass/components/_nav.scss */
+/* line 93, ../sass/components/_nav.scss */
 #social .fa-twitter:before {
   content: "\f099";
 }
-/* line 95, ../sass/components/_nav.scss */
+/* line 98, ../sass/components/_nav.scss */
 #social .fa-github:before {
   content: "\f09b";
 }
-/* line 100, ../sass/components/_nav.scss */
+/* line 103, ../sass/components/_nav.scss */
 #social .fa-linkedin-square:before {
   content: "\f08c";
 }
