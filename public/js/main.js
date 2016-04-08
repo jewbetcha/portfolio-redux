@@ -7,18 +7,18 @@
   // All the possible options (these are the default values)
   // Remember that every option (except individualDelays) can be defined as single value or array
   var options = {
-      size: 65,         // Font size, defined by the height of the letters (pixels)
-      weight: 7,         // Font weight (pixels)
-      rounded: true,    // Rounded letter endings
-      color: '#483D3F',  // Font color
-      duration: 1.2,       // Duration of the animation of each letter (seconds)
-      delay: [0.7,0.4,0.5,0.45,0.15,0.35,0.3,0.2,0.1,0.3,0.3,0.1,0.2,0.54],  // Delay animation among letters (seconds)
-      fade: 0.2,         // Fade effect duration (seconds)
+      size: 65,
+      weight: 7,
+      rounded: true,
+      color: '#483D3F',
+      duration: 1.2,
+      delay: [0.7,0.4,0.5,0.45,0.15,0.35,0.3,0.2,0.1,0.3,0.3,0.1,0.2,0.54],
+      fade: 0.2,
       easing: d3_ease.easeCubicInOut.ease,   // Easing function
-      individualDelays: true,               // If false (default), every letter delay increase gradually, showing letters from left to right always. If you want to show letters in a disorderly way, set it to true, and define different delays for the desired letters.
+      individualDelays: true,
   };
 
-  // Initializing the text (Letters parameters: container-element, options)
+  // Initializing the text
   var myText = new Letters(el, options);
   myText.show();
 
