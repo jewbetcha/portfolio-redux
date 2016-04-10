@@ -36,7 +36,7 @@
         var self = $(this);
         setTimeout(function () {
             self.removeClass('icobutton--hover');
-        }, 2000);
+        }, 1500);
       });
   });
 })();
