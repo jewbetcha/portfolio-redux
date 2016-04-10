@@ -64,21 +64,70 @@ a:hover {
     opacity: 1;
   }
 }
-/* line 55, ../sass/components/_global.scss */
+/* line 50, ../sass/components/_global.scss */
 .letter {
   margin: 0 2px;
 }
 
-/* line 58, ../sass/components/_global.scss */
+/* line 53, ../sass/components/_global.scss */
 .letter-space {
   display: none;
 }
 
-/* line 61, ../sass/components/_global.scss */
+/* line 56, ../sass/components/_global.scss */
 .letter-7 {
   margin-right: 10px;
 }
 
+/* line 61, ../sass/components/_global.scss */
+.icobutton::after {
+  border: 5px solid rgba(111, 148, 182, 0.8);
+}
+
+/* line 65, ../sass/components/_global.scss */
+.icobutton.icobutton--hover::after {
+  -webkit-animation: anim-effect-jelena 0.4s ease-out forwards;
+  animation: anim-effect-jelena 0.4s ease-out forwards;
+}
+
+/* line 69, ../sass/components/_global.scss */
+.icobutton::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -79% 0 0 -80%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@-webkit-keyframes anim-effect-jelena {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(0.5, 0.5, 1);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(1.2, 1.2, 1);
+    transform: scale3d(1.2, 1.2, 1);
+  }
+}
+@keyframes anim-effect-jelena {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.5, 0.5, 1);
+    transform: scale3d(0.5, 0.5, 1);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(1.2, 1.2, 1);
+    transform: scale3d(1.2, 1.2, 1);
+  }
+}
 /* line 3, ../sass/components/_nav.scss */
 #nav {
   text-align: center;
@@ -166,31 +215,27 @@ a:hover {
   -webkit-tap-highlight-color: transparent;
   height: 50px;
   width: 50px;
+  margin: 0 10px;
 }
-/* line 79, ../sass/components/_nav.scss */
-#social button svg {
-  left: 25px;
-  top: 25px;
-}
-/* line 84, ../sass/components/_nav.scss */
+/* line 80, ../sass/components/_nav.scss */
 #social a {
   text-decoration: none;
 }
-/* line 87, ../sass/components/_nav.scss */
+/* line 83, ../sass/components/_nav.scss */
 #social span {
   display: block;
   font-size: 40px;
   margin: 5px 5px;
 }
-/* line 93, ../sass/components/_nav.scss */
+/* line 89, ../sass/components/_nav.scss */
 #social .fa-twitter:before {
   content: "\f099";
 }
-/* line 98, ../sass/components/_nav.scss */
+/* line 94, ../sass/components/_nav.scss */
 #social .fa-github:before {
   content: "\f09b";
 }
-/* line 103, ../sass/components/_nav.scss */
+/* line 99, ../sass/components/_nav.scss */
 #social .fa-linkedin-square:before {
   content: "\f08c";
 }
