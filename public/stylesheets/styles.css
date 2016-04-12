@@ -191,8 +191,72 @@ a:hover {
 #stuff p {
   margin: 20px 0;
 }
+/* line 66, ../sass/components/_nav.scss */
+#stuff button {
+  border: 1px solid #483D3F;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 7px 20px;
+  height: 50px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 0;
+}
+/* line 86, ../sass/components/_nav.scss */
+#stuff button a {
+  text-decoration: none;
+}
+/* line 90, ../sass/components/_nav.scss */
+#stuff .hover-effect {
+  overflow: hidden;
+}
+/* line 93, ../sass/components/_nav.scss */
+#stuff .hover-effect::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 70%;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  background: rgba(111, 148, 182, 0.8);
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+/* line 113, ../sass/components/_nav.scss */
+#stuff .hover-effect:hover,
+#stuff .hover-effect:active {
+  color: #0e83cd;
+}
+/* line 118, ../sass/components/_nav.scss */
+#stuff .hover-effect:hover:after {
+  height: 260%;
+  opacity: 1;
+}
+/* line 123, ../sass/components/_nav.scss */
+#stuff .hover-effect:active:after {
+  height: 400%;
+  opacity: 1;
+}
 
-/* line 68, ../sass/components/_nav.scss */
+/* line 129, ../sass/components/_nav.scss */
 #social button {
   position: relative;
   margin: 0;
@@ -205,25 +269,25 @@ a:hover {
   width: 50px;
   margin: 0 10px;
 }
-/* line 80, ../sass/components/_nav.scss */
+/* line 141, ../sass/components/_nav.scss */
 #social a {
   text-decoration: none;
 }
-/* line 83, ../sass/components/_nav.scss */
+/* line 144, ../sass/components/_nav.scss */
 #social span {
   display: block;
   font-size: 40px;
   margin: 5px 5px;
 }
-/* line 89, ../sass/components/_nav.scss */
+/* line 150, ../sass/components/_nav.scss */
 #social .fa-twitter:before {
   content: "\f099";
 }
-/* line 94, ../sass/components/_nav.scss */
+/* line 155, ../sass/components/_nav.scss */
 #social .fa-github:before {
   content: "\f09b";
 }
-/* line 99, ../sass/components/_nav.scss */
+/* line 160, ../sass/components/_nav.scss */
 #social .fa-linkedin-square:before {
   content: "\f08c";
 }

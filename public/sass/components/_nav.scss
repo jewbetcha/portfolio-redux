@@ -63,6 +63,67 @@
   p {
     margin: 20px 0;
   }
+  button {
+    border: 1px solid $brown;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 7px 20px;
+    height: 50px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 0;
+    a {
+      text-decoration: none;
+    }
+  }
+  .hover-effect {
+  	overflow: hidden;
+
+    &::after {
+      content: '';
+    	position: absolute;
+    	z-index: -1;
+    	-webkit-transition: all 0.3s;
+    	-moz-transition: all 0.3s;
+    	transition: all 0.3s;
+    	width: 70%;
+    	height: 0;
+    	top: 50%;
+    	left: 50%;
+    	background: rgba(111,148,182,0.8);
+    	opacity: 0;
+    	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    	-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    	-ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    }
+  }
+
+  .hover-effect:hover,
+  .hover-effect:active {
+  	color: #0e83cd;
+  }
+
+  .hover-effect:hover:after {
+  	height: 260%;
+  	opacity: 1;
+  }
+
+  .hover-effect:active:after {
+  	height: 400%;
+  	opacity: 1;
+  }
 }
 #social {
   button {
