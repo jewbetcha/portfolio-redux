@@ -62,7 +62,7 @@ a {
 	border: 5px solid rgba(79,126,139,0.8);
 }
 
-.icobutton.icobutton--hover::after {
+.icobutton:hover::after {
 	-webkit-animation: anim-effect-jelena 0.4s ease-out forwards;
 	animation: anim-effect-jelena 0.4s ease-out forwards;
 }

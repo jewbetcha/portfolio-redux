@@ -85,7 +85,7 @@ a:hover {
 }
 
 /* line 65, ../sass/components/_global.scss */
-.icobutton.icobutton--hover::after {
+.icobutton:hover::after {
   -webkit-animation: anim-effect-jelena 0.4s ease-out forwards;
   animation: anim-effect-jelena 0.4s ease-out forwards;
 }

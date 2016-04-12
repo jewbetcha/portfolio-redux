@@ -30,13 +30,5 @@
         opacity: 1,
         y: 25
       }, 0.2);
-
-      $('.icobutton').hover(function() {
-        $(this).addClass('icobutton--hover');
-        var self = $(this);
-        setTimeout(function () {
-            self.removeClass('icobutton--hover');
-        }, 1500);
-      });
   });
 })();
