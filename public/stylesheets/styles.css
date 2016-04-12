@@ -21,7 +21,7 @@ a {
 }
 /* line 30, ../sass/components/_global.scss */
 a:hover {
-  color: #0081AF;
+  color: #fff;
 }
 
 @keyframes grow {
@@ -81,7 +81,7 @@ a:hover {
 
 /* line 61, ../sass/components/_global.scss */
 .icobutton::after {
-  border: 5px solid rgba(111, 148, 182, 0.8);
+  border: 5px solid rgba(79, 126, 139, 0.8);
 }
 
 /* line 65, ../sass/components/_global.scss */
@@ -233,7 +233,7 @@ a:hover {
   height: 0;
   top: 50%;
   left: 50%;
-  background: rgba(111, 148, 182, 0.8);
+  background: rgba(79, 126, 139, 0.8);
   opacity: 0;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
   -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
@@ -241,22 +241,17 @@ a:hover {
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
 }
 /* line 113, ../sass/components/_nav.scss */
-#stuff .hover-effect:hover,
-#stuff .hover-effect:active {
-  color: #0e83cd;
-}
-/* line 118, ../sass/components/_nav.scss */
 #stuff .hover-effect:hover:after {
   height: 260%;
   opacity: 1;
 }
-/* line 123, ../sass/components/_nav.scss */
+/* line 118, ../sass/components/_nav.scss */
 #stuff .hover-effect:active:after {
   height: 400%;
   opacity: 1;
 }
 
-/* line 129, ../sass/components/_nav.scss */
+/* line 124, ../sass/components/_nav.scss */
 #social button {
   position: relative;
   margin: 0;
@@ -269,25 +264,25 @@ a:hover {
   width: 50px;
   margin: 0 10px;
 }
-/* line 141, ../sass/components/_nav.scss */
+/* line 136, ../sass/components/_nav.scss */
 #social a {
   text-decoration: none;
 }
-/* line 144, ../sass/components/_nav.scss */
+/* line 139, ../sass/components/_nav.scss */
 #social span {
   display: block;
   font-size: 40px;
   margin: 5px 5px;
 }
-/* line 150, ../sass/components/_nav.scss */
+/* line 145, ../sass/components/_nav.scss */
 #social .fa-twitter:before {
   content: "\f099";
 }
-/* line 155, ../sass/components/_nav.scss */
+/* line 150, ../sass/components/_nav.scss */
 #social .fa-github:before {
   content: "\f09b";
 }
-/* line 160, ../sass/components/_nav.scss */
+/* line 155, ../sass/components/_nav.scss */
 #social .fa-linkedin-square:before {
   content: "\f08c";
 }

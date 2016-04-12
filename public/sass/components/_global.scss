@@ -28,7 +28,7 @@ a {
   color: $brown;
 
   &:hover {
-    color: $blue;
+    color: $white;
   }
 }
 @keyframes grow {
@@ -59,7 +59,7 @@ a {
 
 // Animations for icons
 .icobutton::after {
-	border: 5px solid rgba(111,148,182,0.8);
+	border: 5px solid rgba(79,126,139,0.8);
 }
 
 .icobutton.icobutton--hover::after {

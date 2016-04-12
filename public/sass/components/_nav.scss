@@ -101,18 +101,13 @@
     	height: 0;
     	top: 50%;
     	left: 50%;
-    	background: rgba(111,148,182,0.8);
+    	background: rgba(79,126,139,0.8);;
     	opacity: 0;
     	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
     	-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
     	-ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
     	transform: translateX(-50%) translateY(-50%) rotate(45deg);
     }
-  }
-
-  .hover-effect:hover,
-  .hover-effect:active {
-  	color: #0e83cd;
   }
 
   .hover-effect:hover:after {
