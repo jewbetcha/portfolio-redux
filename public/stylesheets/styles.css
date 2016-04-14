@@ -65,32 +65,41 @@ a:hover {
   }
 }
 /* line 50, ../sass/components/_global.scss */
+.my-text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* line 57, ../sass/components/_global.scss */
 .letter {
   margin: 0 2px;
 }
 
-/* line 53, ../sass/components/_global.scss */
+/* line 60, ../sass/components/_global.scss */
 .letter-space {
   display: none;
 }
 
-/* line 56, ../sass/components/_global.scss */
+/* line 63, ../sass/components/_global.scss */
 .letter-7 {
   margin-right: 10px;
 }
 
-/* line 61, ../sass/components/_global.scss */
+/* line 68, ../sass/components/_global.scss */
 .icobutton::after {
   border: 5px solid rgba(79, 126, 139, 0.8);
 }
 
-/* line 65, ../sass/components/_global.scss */
+/* line 72, ../sass/components/_global.scss */
 .icobutton:hover::after {
   -webkit-animation: anim-effect-jelena 0.4s ease-out forwards;
   animation: anim-effect-jelena 0.4s ease-out forwards;
 }
 
-/* line 69, ../sass/components/_global.scss */
+/* line 76, ../sass/components/_global.scss */
 .icobutton::after {
   content: '';
   position: absolute;
