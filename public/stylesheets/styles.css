@@ -193,8 +193,8 @@ a:hover {
 
 /* line 59, ../sass/components/_nav.scss */
 #stuff a {
+  display: inline-block;
   font-weight: bold;
-  padding: 0 5px;
 }
 /* line 63, ../sass/components/_nav.scss */
 #stuff p {
