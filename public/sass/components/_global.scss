@@ -3,6 +3,7 @@
 // Some variables
 $white: #fff;
 $brown: #483D3F;
+$lightBrown: #7E7778;
 $blue: #0081AF;
 $border: 1px dotted $brown;
 $gray: #F6F6F6;
@@ -28,6 +29,11 @@ a {
   &:hover {
     color: $white;
   }
+}
+h2,
+h5 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 @keyframes grow {
   0% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }

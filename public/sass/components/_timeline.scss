@@ -9,7 +9,12 @@
 	font-style: normal;
 } /* Made with http://icomoon.io/ */
 
+#timeline {
+  margin-top: 20px;
+  text-align: center;
+}
 .cbp_tmtimeline {
+  text-align: left;
 	margin: 30px 0 0 0;
 	padding: 0;
 	list-style: none;
@@ -17,16 +22,16 @@
 }
 
 /* The line */
-// .cbp_tmtimeline:before {
-// 	content: '';
-// 	position: absolute;
-// 	top: 0;
-// 	bottom: 0;
-// 	width: 10px;
-// 	background: #afdcf8;
-// 	left: 20%;
-// 	margin-left: -10px;
-// }
+.cbp_tmtimeline:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 10px;
+	background: $lightBrown;
+	left: 20%;
+	margin-left: -10px;
+}
 
 .cbp_tmtimeline > li {
 	position: relative;
@@ -46,19 +51,19 @@
 	text-align: right;
 }
 
-.cbp_tmtimeline > li .cbp_tmtime span:first-child {
+.cbp_tmtimeline > li .cbp_tmtime span {
 	font-size: 0.9em;
-	color: #bdd0db;
+	color: $brown;
 }
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child {
-	color: #6cbfee;
+	color: $lightBrown;
 }
 
 /* Right content */
 .cbp_tmtimeline > li .cbp_tmlabel {
 	margin: 0 auto 15px auto;
-	background: #3594cb;
+	background: $brown;
 	color: #fff;
 	padding: 2em;
 	font-size: 1.2em;
@@ -70,7 +75,7 @@
 }
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
-	background: #6cbfee;
+	background: $lightBrown;
 }
 
 .cbp_tmtimeline > li .cbp_tmlabel h2 {
@@ -88,20 +93,20 @@
 	width: 0;
 	position: absolute;
 	pointer-events: none;
-	border-right-color: #3594cb;
+	border-right-color: $brown;
 	border-width: 10px;
 	top: 10px;
 }
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
-	border-right-color: #6cbfee;
+	border-right-color: $lightBrown;
 }
 
 /* The icons */
 .cbp_tmtimeline > li .cbp_tmicon {
 	width: 40px;
 	height: 40px;
-	font-family: 'ecoico';
+  font-family: 'ecoico';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -112,9 +117,9 @@
 	-webkit-font-smoothing: antialiased;
 	position: absolute;
 	color: #fff;
-	background: #46a4da;
+	background: $brown;
 	border-radius: 50%;
-	box-shadow: 0 0 0 8px #afdcf8;
+	box-shadow: 0 0 0 8px $lightBrown;
 	text-align: center;
 	left: 20%;
 	top: 0;

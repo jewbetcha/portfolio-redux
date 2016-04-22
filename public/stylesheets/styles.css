@@ -1,11 +1,11 @@
-/* line 10, ../sass/components/_global.scss */
+/* line 11, ../sass/components/_global.scss */
 .container {
   width: 100%;
   padding: 0;
   max-width: 1020px;
 }
 
-/* line 16, ../sass/components/_global.scss */
+/* line 17, ../sass/components/_global.scss */
 body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #F6F6F6;
@@ -15,13 +15,20 @@ body {
   animation: 0.5s;
 }
 
-/* line 25, ../sass/components/_global.scss */
+/* line 26, ../sass/components/_global.scss */
 a {
   color: #483D3F;
 }
-/* line 28, ../sass/components/_global.scss */
+/* line 29, ../sass/components/_global.scss */
 a:hover {
   color: #fff;
+}
+
+/* line 33, ../sass/components/_global.scss */
+h2,
+h5 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 @keyframes grow {
@@ -64,7 +71,7 @@ a:hover {
     opacity: 1;
   }
 }
-/* line 48, ../sass/components/_global.scss */
+/* line 54, ../sass/components/_global.scss */
 .my-text {
   display: flex;
   align-items: center;
@@ -73,33 +80,33 @@ a:hover {
   margin: 0 auto;
 }
 
-/* line 55, ../sass/components/_global.scss */
+/* line 61, ../sass/components/_global.scss */
 .letter {
   margin: 0 2px;
 }
 
-/* line 58, ../sass/components/_global.scss */
+/* line 64, ../sass/components/_global.scss */
 .letter-space {
   display: none;
 }
 
-/* line 61, ../sass/components/_global.scss */
+/* line 67, ../sass/components/_global.scss */
 .letter-7 {
   margin-right: 10px;
 }
 
-/* line 66, ../sass/components/_global.scss */
+/* line 72, ../sass/components/_global.scss */
 .icobutton::after {
   border: 5px solid rgba(79, 126, 139, 0.8);
 }
 
-/* line 70, ../sass/components/_global.scss */
+/* line 76, ../sass/components/_global.scss */
 .icobutton:hover::after {
   -webkit-animation: anim-effect-jelena 0.4s ease-out forwards;
   animation: anim-effect-jelena 0.4s ease-out forwards;
 }
 
-/* line 74, ../sass/components/_global.scss */
+/* line 80, ../sass/components/_global.scss */
 .icobutton::after {
   content: '';
   position: absolute;
@@ -134,12 +141,6 @@ a:hover {
   border-top: 0;
   border-bottom: 0;
 }
-/* line 10, ../sass/components/_nav.scss */
-#nav #me h2,
-#nav #me h5 {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
 @media only screen and (max-width: 960px) {
   /* line 6, ../sass/components/_nav.scss */
   #nav #me {
@@ -147,7 +148,7 @@ a:hover {
     padding-right: 20px;
   }
 }
-/* line 22, ../sass/components/_nav.scss */
+/* line 16, ../sass/components/_nav.scss */
 #nav .pic {
   width: 20%;
   height: auto;
@@ -155,28 +156,28 @@ a:hover {
   margin-top: 20px;
 }
 @media only screen and (min-width: 481px) and (max-width: 960px) {
-  /* line 22, ../sass/components/_nav.scss */
+  /* line 16, ../sass/components/_nav.scss */
   #nav .pic {
     width: 30%;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 22, ../sass/components/_nav.scss */
+  /* line 16, ../sass/components/_nav.scss */
   #nav .pic {
     width: 45%;
   }
 }
-/* line 36, ../sass/components/_nav.scss */
+/* line 30, ../sass/components/_nav.scss */
 #nav .columns {
   margin-left: 0;
 }
 @media only screen and (max-width: 960px) {
-  /* line 40, ../sass/components/_nav.scss */
+  /* line 34, ../sass/components/_nav.scss */
   #nav #right {
     text-align: center;
   }
 }
-/* line 46, ../sass/components/_nav.scss */
+/* line 40, ../sass/components/_nav.scss */
 #nav #blurb {
   padding-right: 20px;
   text-align: center;
@@ -184,23 +185,23 @@ a:hover {
   margin: 10px auto;
 }
 @media only screen and (max-width: 960px) {
-  /* line 46, ../sass/components/_nav.scss */
+  /* line 40, ../sass/components/_nav.scss */
   #nav #blurb {
     padding: 0 40px;
     width: 80%;
   }
 }
 
-/* line 59, ../sass/components/_nav.scss */
+/* line 53, ../sass/components/_nav.scss */
 #stuff a {
   display: inline-block;
   font-weight: bold;
 }
-/* line 63, ../sass/components/_nav.scss */
+/* line 57, ../sass/components/_nav.scss */
 #stuff p {
   margin: 20px 0;
 }
-/* line 66, ../sass/components/_nav.scss */
+/* line 60, ../sass/components/_nav.scss */
 #stuff button {
   border: 1px solid #483D3F;
   font-family: inherit;
@@ -223,15 +224,15 @@ a:hover {
   transition: all 0.3s;
   border-radius: 0;
 }
-/* line 87, ../sass/components/_nav.scss */
+/* line 81, ../sass/components/_nav.scss */
 #stuff button a {
   text-decoration: none;
 }
-/* line 91, ../sass/components/_nav.scss */
+/* line 85, ../sass/components/_nav.scss */
 #stuff .hover-effect {
   overflow: hidden;
 }
-/* line 94, ../sass/components/_nav.scss */
+/* line 88, ../sass/components/_nav.scss */
 #stuff .hover-effect::after {
   content: '';
   position: absolute;
@@ -250,18 +251,18 @@ a:hover {
   -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
 }
-/* line 114, ../sass/components/_nav.scss */
+/* line 108, ../sass/components/_nav.scss */
 #stuff .hover-effect:hover:after {
   height: 260%;
   opacity: 1;
 }
-/* line 119, ../sass/components/_nav.scss */
+/* line 113, ../sass/components/_nav.scss */
 #stuff .hover-effect:active:after {
   height: 400%;
   opacity: 1;
 }
 
-/* line 125, ../sass/components/_nav.scss */
+/* line 119, ../sass/components/_nav.scss */
 #social button {
   position: relative;
   margin: 0;
@@ -274,25 +275,25 @@ a:hover {
   width: 50px;
   margin: 0 10px;
 }
-/* line 137, ../sass/components/_nav.scss */
+/* line 131, ../sass/components/_nav.scss */
 #social a {
   text-decoration: none;
 }
-/* line 140, ../sass/components/_nav.scss */
+/* line 134, ../sass/components/_nav.scss */
 #social span {
   display: block;
   font-size: 40px;
   margin: 5px 5px;
 }
-/* line 146, ../sass/components/_nav.scss */
+/* line 140, ../sass/components/_nav.scss */
 #social .fa-twitter:before {
   content: "\f099";
 }
-/* line 151, ../sass/components/_nav.scss */
+/* line 145, ../sass/components/_nav.scss */
 #social .fa-github:before {
   content: "\f09b";
 }
-/* line 156, ../sass/components/_nav.scss */
+/* line 150, ../sass/components/_nav.scss */
 #social .fa-linkedin-square:before {
   content: "\f08c";
 }
@@ -427,7 +428,14 @@ a:hover {
 }
 /* Made with http://icomoon.io/ */
 /* line 12, ../sass/components/_timeline.scss */
+#timeline {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* line 16, ../sass/components/_timeline.scss */
 .cbp_tmtimeline {
+  text-align: left;
   margin: 30px 0 0 0;
   padding: 0;
   list-style: none;
@@ -435,13 +443,25 @@ a:hover {
 }
 
 /* The line */
-/* line 31, ../sass/components/_timeline.scss */
+/* line 25, ../sass/components/_timeline.scss */
+.cbp_tmtimeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background: #7E7778;
+  left: 20%;
+  margin-left: -10px;
+}
+
+/* line 36, ../sass/components/_timeline.scss */
 .cbp_tmtimeline > li {
   position: relative;
 }
 
 /* The date/time */
-/* line 36, ../sass/components/_timeline.scss */
+/* line 41, ../sass/components/_timeline.scss */
 .cbp_tmtimeline > li .cbp_tmtime {
   display: block;
   width: 25%;
@@ -450,28 +470,28 @@ a:hover {
   left: -95px;
 }
 
-/* line 44, ../sass/components/_timeline.scss */
+/* line 49, ../sass/components/_timeline.scss */
 .cbp_tmtimeline > li .cbp_tmtime span {
   display: block;
   text-align: right;
 }
 
-/* line 49, ../sass/components/_timeline.scss */
-.cbp_tmtimeline > li .cbp_tmtime span:first-child {
+/* line 54, ../sass/components/_timeline.scss */
+.cbp_tmtimeline > li .cbp_tmtime span {
   font-size: 0.9em;
-  color: #bdd0db;
+  color: #483D3F;
 }
 
-/* line 54, ../sass/components/_timeline.scss */
+/* line 59, ../sass/components/_timeline.scss */
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child {
-  color: #6cbfee;
+  color: #7E7778;
 }
 
 /* Right content */
-/* line 59, ../sass/components/_timeline.scss */
+/* line 64, ../sass/components/_timeline.scss */
 .cbp_tmtimeline > li .cbp_tmlabel {
   margin: 0 auto 15px auto;
-  background: #3594cb;
+  background: #483D3F;
   color: #fff;
   padding: 2em;
   font-size: 1.2em;
@@ -482,12 +502,12 @@ a:hover {
   width: 45%;
 }
 
-/* line 72, ../sass/components/_timeline.scss */
+/* line 77, ../sass/components/_timeline.scss */
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
-  background: #6cbfee;
+  background: #7E7778;
 }
 
-/* line 76, ../sass/components/_timeline.scss */
+/* line 81, ../sass/components/_timeline.scss */
 .cbp_tmtimeline > li .cbp_tmlabel h2 {
   margin-top: 0px;
   padding: 0 0 10px 0;
@@ -495,7 +515,7 @@ a:hover {
 }
 
 /* The triangle */
-/* line 83, ../sass/components/_timeline.scss */
+/* line 88, ../sass/components/_timeline.scss */
 .cbp_tmtimeline > li .cbp_tmlabel:after {
   right: 100%;
   border: solid transparent;
@@ -504,18 +524,18 @@ a:hover {
   width: 0;
   position: absolute;
   pointer-events: none;
-  border-right-color: #3594cb;
+  border-right-color: #483D3F;
   border-width: 10px;
   top: 10px;
 }
 
-/* line 96, ../sass/components/_timeline.scss */
+/* line 101, ../sass/components/_timeline.scss */
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
-  border-right-color: #6cbfee;
+  border-right-color: #7E7778;
 }
 
 /* The icons */
-/* line 101, ../sass/components/_timeline.scss */
+/* line 106, ../sass/components/_timeline.scss */
 .cbp_tmtimeline > li .cbp_tmicon {
   width: 40px;
   height: 40px;
@@ -530,61 +550,61 @@ a:hover {
   -webkit-font-smoothing: antialiased;
   position: absolute;
   color: #fff;
-  background: #46a4da;
+  background: #483D3F;
   border-radius: 50%;
-  box-shadow: 0 0 0 8px #afdcf8;
+  box-shadow: 0 0 0 8px #7E7778;
   text-align: center;
   left: 20%;
   top: 0;
   margin: 0 0 0 -25px;
 }
 
-/* line 124, ../sass/components/_timeline.scss */
+/* line 129, ../sass/components/_timeline.scss */
 .cbp_tmicon-phone:before {
   content: "\e000";
 }
 
-/* line 128, ../sass/components/_timeline.scss */
+/* line 133, ../sass/components/_timeline.scss */
 .cbp_tmicon-screen:before {
   content: "\e001";
 }
 
-/* line 132, ../sass/components/_timeline.scss */
+/* line 137, ../sass/components/_timeline.scss */
 .cbp_tmicon-mail:before {
   content: "\e002";
 }
 
-/* line 136, ../sass/components/_timeline.scss */
+/* line 141, ../sass/components/_timeline.scss */
 .cbp_tmicon-earth:before {
   content: "\e003";
 }
 
 /* Example Media Queries */
 @media screen and (max-width: 65.375em) {
-  /* line 143, ../sass/components/_timeline.scss */
+  /* line 148, ../sass/components/_timeline.scss */
   .cbp_tmtimeline > li .cbp_tmtime span:last-child {
     font-size: 1.5em;
   }
 }
 @media screen and (max-width: 47.2em) {
-  /* line 149, ../sass/components/_timeline.scss */
+  /* line 154, ../sass/components/_timeline.scss */
   .cbp_tmtimeline:before {
     display: none;
   }
 
-  /* line 153, ../sass/components/_timeline.scss */
+  /* line 158, ../sass/components/_timeline.scss */
   .cbp_tmtimeline > li .cbp_tmtime {
     width: 100%;
     position: relative;
     padding: 0 0 20px 0;
   }
 
-  /* line 159, ../sass/components/_timeline.scss */
+  /* line 164, ../sass/components/_timeline.scss */
   .cbp_tmtimeline > li .cbp_tmtime span {
     text-align: left;
   }
 
-  /* line 163, ../sass/components/_timeline.scss */
+  /* line 168, ../sass/components/_timeline.scss */
   .cbp_tmtimeline > li .cbp_tmlabel {
     margin: 0 0 30px 0;
     padding: 1em;
@@ -592,7 +612,7 @@ a:hover {
     font-size: 95%;
   }
 
-  /* line 170, ../sass/components/_timeline.scss */
+  /* line 175, ../sass/components/_timeline.scss */
   .cbp_tmtimeline > li .cbp_tmlabel:after {
     right: auto;
     left: 20px;
@@ -601,13 +621,13 @@ a:hover {
     top: -20px;
   }
 
-  /* line 178, ../sass/components/_timeline.scss */
+  /* line 183, ../sass/components/_timeline.scss */
   .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
     border-right-color: transparent;
     border-bottom-color: #6cbfee;
   }
 
-  /* line 183, ../sass/components/_timeline.scss */
+  /* line 188, ../sass/components/_timeline.scss */
   .cbp_tmtimeline > li .cbp_tmicon {
     position: relative;
     float: right;
