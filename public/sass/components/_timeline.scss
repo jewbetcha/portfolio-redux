@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'ecoico';
-	src:url('../fonts/timelineicons/ecoico.eot');
-	src:url('../fonts/timelineicons/ecoico.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/timelineicons/ecoico.woff') format('woff'),
-		url('../fonts/timelineicons/ecoico.ttf') format('truetype'),
-		url('../fonts/timelineicons/ecoico.svg#ecoico') format('svg');
+	src:url('fonts/ecoico.eot');
+	src:url('fonts/ecoico.eot?#iefix') format('embedded-opentype'),
+		url('fonts/ecoico.woff') format('woff'),
+		url('fonts/ecoico.ttf') format('truetype'),
+		url('fonts/ecoico.svg#ecoico') format('svg');
 	font-weight: normal;
 	font-style: normal;
 } /* Made with http://icomoon.io/ */
@@ -17,16 +17,16 @@
 }
 
 /* The line */
-.cbp_tmtimeline:before {
-	content: '';
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	width: 10px;
-	background: #afdcf8;
-	left: 20%;
-	margin-left: -10px;
-}
+// .cbp_tmtimeline:before {
+// 	content: '';
+// 	position: absolute;
+// 	top: 0;
+// 	bottom: 0;
+// 	width: 10px;
+// 	background: #afdcf8;
+// 	left: 20%;
+// 	margin-left: -10px;
+// }
 
 .cbp_tmtimeline > li {
 	position: relative;
@@ -38,6 +38,7 @@
 	width: 25%;
 	padding-right: 100px;
 	position: absolute;
+  left: -95px;
 }
 
 .cbp_tmtimeline > li .cbp_tmtime span {
@@ -50,18 +51,13 @@
 	color: #bdd0db;
 }
 
-.cbp_tmtimeline > li .cbp_tmtime span:last-child {
-	font-size: 2.9em;
-	color: #3594cb;
-}
-
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child {
 	color: #6cbfee;
 }
 
 /* Right content */
 .cbp_tmtimeline > li .cbp_tmlabel {
-	margin: 0 0 15px 25%;
+	margin: 0 auto 15px auto;
 	background: #3594cb;
 	color: #fff;
 	padding: 2em;
@@ -70,6 +66,7 @@
 	line-height: 1.4;
 	position: relative;
 	border-radius: 5px;
+  width: 45%;
 }
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
