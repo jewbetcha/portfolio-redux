@@ -1,0 +1,13 @@
+/* line 1, ../sass/styles.scss */
+#main {
+  text-align: center;
+}
+/* line 4, ../sass/styles.scss */
+#main .video {
+  width: 50%;
+  float: left;
+}
+/* line 8, ../sass/styles.scss */
+#main .video iframe {
+  width: 100%;
+}

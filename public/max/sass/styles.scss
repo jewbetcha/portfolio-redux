@@ -1,0 +1,12 @@
+#main {
+  text-align: center;
+
+  .video {
+    width: 50%;
+    float: left;
+
+    iframe {
+      width: 100%;
+    }
+  }
+}
