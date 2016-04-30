@@ -17,6 +17,9 @@
     <div class="container">
       <div class="row" id="main">
         <h1>Happy birthday, Max!</h1>
+        <h4>
+          Here are some messages from your friends :)
+        </h4>
         <div class="video" ng-repeat="video in videos">
           <h3>{{ video.title }}</h3>
           <iframe width="450" height="253" ng-src="{{ video.url | trustUrl }}" frameborder="0" allowfullscreen></iframe>
