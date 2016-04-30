@@ -1,12 +1,69 @@
+// Breakpoint mixins
+@mixin mobile {
+  @media only screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: 480px + 1) and (max-width: 960px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 960px + 1) {
+    @content;
+  }
+}
+
+@mixin mobile_tablet {
+  @media only screen and (max-width: 960px) {
+    @content;
+  }
+}
+
+@mixin tablet_desktop {
+  @media only screen and (min-width: 480px + 1) {
+    @content;
+  }
+}
+
 #main {
   text-align: center;
 
   .video {
-    width: 50%;
+    width: 48%;
     float: left;
+    margin: 0 9px;
 
-    iframe {
-      
+    @include mobile_tablet {
+      width: 100%;
+      float: none;
+      margin: 0;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+    }
+    iframe,
+    object,
+    embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 95%;
+      height: 95%;
+
+      @include mobile_tablet {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }
+
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }

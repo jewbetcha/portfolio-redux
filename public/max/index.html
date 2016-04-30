@@ -2,7 +2,9 @@
 <html ng-app="app">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Portfolio site for Coleman Rollins, Front-End Developer">
+    <title>Max's Birthday</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
@@ -20,7 +22,9 @@
         </h4>
         <div class="video" ng-repeat="video in videos">
           <h3>{{ video.title }}</h3>
-          <iframe width="450" height="253" ng-src="{{ video.url | trustUrl }}" frameborder="0" allowfullscreen></iframe>
+          <div class="video-container">
+            <iframe ng-src="{{ video.url | trustUrl }}" frameborder="0" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </div>
