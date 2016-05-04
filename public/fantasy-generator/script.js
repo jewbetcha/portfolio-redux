@@ -1,6 +1,8 @@
 (function($) {
 	$(document).ready(function(){
-	      
+
+			// TODO: refactor this whole thing
+			// TODO: Get data from JSON, not in this file
 	    // Option 1
       var grossVerb = [
         "Shit Taking",
@@ -37,7 +39,7 @@
         "Ass",
         "Dick"
         ];
-        
+
       // Option 2
       var nice = [
         "Pleasant",
@@ -68,7 +70,7 @@
         "Luscious",
         "Greasy"
         ];
-        
+
       // Option 3
       var GoT = [
         "Lannisters",
@@ -118,22 +120,23 @@
         "Ravagers",
         "Extinguishers"
         ];
-  
+
       var item;
       function getRandom(arr) {
         item = arr[Math.floor(Math.random()*arr.length)];
         return item;
       }
-      
+
       var result1 = $('#result1'),
           result2 = $('#result2'),
           result3 = $('#result3');
-          
+
+			// TODO: get rid of the switch function, do it in a better way
       $('#generate').click(function () {
         var key1 = $('#firstList :selected').attr('value'),
             key2 = $('#secondList :selected').attr('value'),
             key3 = $('#thirdList :selected').attr('value');
-          
+
           switch (key1) {
             case '1':
               result1.text(getRandom(celebs));
@@ -150,7 +153,7 @@
             case '5':
               result1.text(getRandom(swearWords));
             break;
-            
+
             default:
               alert('no');
           }
@@ -164,7 +167,7 @@
             case '3':
               result2.text(getRandom(rand));
             break;
-            
+
             default:
               alert('nah');
           }
@@ -184,7 +187,7 @@
             case '5':
               result3.text(getRandom(verbs));
             break;
-            
+
             default:
               alert('no');
           }
