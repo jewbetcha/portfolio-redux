@@ -2,7 +2,6 @@
 	$(document).ready(function(){
 
 			// TODO: refactor this whole thing
-			// TODO: Get data from JSON, not in this file
 	    // Option 1
       var grossVerb = [
         "Shit Taking",
@@ -131,71 +130,72 @@
           result2 = $('#result2'),
           result3 = $('#result3');
 
-			// TODO: get rid of the switch function, do it in a better way
+			// Switch statement to get results depending on each of our
+			// options.
       $('#generate').click(function () {
-        var key1 = $('#firstList :selected').attr('value'),
-            key2 = $('#secondList :selected').attr('value'),
-            key3 = $('#thirdList :selected').attr('value');
+				var key1 = $('#firstList').val(),
+						key2 = $('#secondList').val(),
+						key3 = $('#thirdList').val();
 
-          switch (key1) {
-            case '1':
-              result1.text(getRandom(celebs));
-              break;
-            case '2':
-              result1.text(getRandom(grossVerb));
+        switch (key1) {
+          case '1':
+            result1.text(getRandom(celebs));
             break;
-            case '3':
-              result1.text(getRandom(analysts));
-            break;
-            case '4':
-              result1.text(getRandom(coaches));
-            break;
-            case '5':
-              result1.text(getRandom(swearWords));
-            break;
+          case '2':
+            result1.text(getRandom(grossVerb));
+          break;
+          case '3':
+            result1.text(getRandom(analysts));
+          break;
+          case '4':
+            result1.text(getRandom(coaches));
+          break;
+          case '5':
+            result1.text(getRandom(swearWords));
+          break;
 
-            default:
-              alert('no');
-						break;
-          }
-          switch (key2) {
-            case '1':
-              result2.text(getRandom(nice));
-              break;
-            case '2':
-              result2.text(getRandom(mean));
+          default:
+            alert('no');
+					break;
+        }
+        switch (key2) {
+          case '1':
+            result2.text(getRandom(nice));
             break;
-            case '3':
-              result2.text(getRandom(rand));
-            break;
+          case '2':
+            result2.text(getRandom(mean));
+          break;
+          case '3':
+            result2.text(getRandom(rand));
+          break;
 
-            default:
-              alert('nah');
-						break;
-          }
-          switch (key3) {
-            case '1':
-              result3.text(getRandom(GoT));
-              break;
-            case '2':
-              result3.text(getRandom(nouns));
+          default:
+            alert('nah');
+					break;
+        }
+        switch (key3) {
+          case '1':
+            result3.text(getRandom(GoT));
             break;
-            case '3':
-              result3.text(getRandom(objects));
-            break;
-            case '4':
-              result3.text(getRandom(teams));
-            break;
-            case '5':
-              result3.text(getRandom(verbs));
-            break;
+          case '2':
+            result3.text(getRandom(nouns));
+          break;
+          case '3':
+            result3.text(getRandom(objects));
+          break;
+          case '4':
+            result3.text(getRandom(teams));
+          break;
+          case '5':
+            result3.text(getRandom(verbs));
+          break;
 
-            default:
-              alert('no');
-						break;
-          }
+          default:
+            alert('no');
+					break;
+        }
 
-
+				$(this).text('Try again?');
       });
 	});
 }(jQuery));
