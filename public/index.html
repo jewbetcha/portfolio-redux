@@ -140,6 +140,11 @@
 
     <script>
       var portfolioApp = angular.module("portfolioApp", ["firebase"]);
+        
+      // Adding config to get rid of Angular debugging stuff      
+      portfolioApp.config(['$compileProvider', function ($compileProvider) {
+        $compileProvider.debugInfoEnabled(false);
+      }]);
 
       portfolioApp.controller("mainController", ["$scope", "$firebaseArray",
         function($scope, $firebaseArray) {
