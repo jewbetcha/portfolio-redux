@@ -156,6 +156,7 @@
 
             default:
               alert('no');
+						break;
           }
           switch (key2) {
             case '1':
@@ -170,6 +171,7 @@
 
             default:
               alert('nah');
+						break;
           }
           switch (key3) {
             case '1':
@@ -190,6 +192,7 @@
 
             default:
               alert('no');
+						break;
           }
 
 
