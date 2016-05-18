@@ -1,37 +1,142 @@
-/* line 1, ../sass/styles.scss */
+/* line 6, ../sass/styles.scss */
 #main {
   max-width: 1280px;
   margin: auto;
   text-align: center;
 }
-/* line 6, ../sass/styles.scss */
+/* line 11, ../sass/styles.scss */
 #main .row {
   margin-bottom: 30px;
 }
 
-/* line 10, ../sass/styles.scss */
+/* line 17, ../sass/styles.scss */
+#pulse {
+  height: 90px;
+}
+
+/* line 20, ../sass/styles.scss */
 .loading-pulse {
-  height: 50px;
-  width: 50px;
+  height: 20px;
+  width: 20px;
   background-color: #0081AF;
   margin: auto;
   border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
 }
 
 @keyframes pulse {
   0% {
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
     opacity: 1;
+    transform: translateY(0px);
   }
   50% {
-    width: 75px;
-    height: 75px;
+    width: 30px;
+    height: 30px;
     opacity: .2;
+    transform: translateY(-10px);
   }
   100% {
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
     opacity: 1;
+    transform: translateY(0px);
+  }
+}
+/* line 40, ../sass/styles.scss */
+.sliders {
+  height: 40px;
+  width: 40px;
+  margin: auto;
+}
+/* line 45, ../sass/styles.scss */
+.sliders .slice {
+  height: 10px;
+  width: 40px;
+}
+/* line 49, ../sass/styles.scss */
+.sliders .slice:nth-child(odd) {
+  background-color: #0081AF;
+  animation: slideLeft 2s ease-in-out infinite;
+}
+/* line 53, ../sass/styles.scss */
+.sliders .slice:nth-child(even) {
+  background-color: #483D3F;
+  animation: slideRight 2s ease-in-out infinite;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(-15px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(15px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(-15px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+/* line 76, ../sass/styles.scss */
+.fan {
+  height: 20px;
+  width: 60px;
+  margin: auto;
+  margin-top: 30px;
+  animation: rotate 2s ease-in-out infinite;
+}
+/* line 83, ../sass/styles.scss */
+.fan .blade {
+  width: 100%;
+  height: 5px;
+}
+/* line 87, ../sass/styles.scss */
+.fan .blade:nth-child(1) {
+  background-color: #0081AF;
+  transform: translateY(7.5px);
+}
+/* line 91, ../sass/styles.scss */
+.fan .blade:nth-child(2) {
+  background-color: #7E7778;
+  transform: translateY(2.5px) rotate(135deg);
+}
+/* line 95, ../sass/styles.scss */
+.fan .blade:nth-child(3) {
+  background-color: #483D3F;
+  transform: translateY(-2.5px) rotate(45deg);
+}
+/* line 99, ../sass/styles.scss */
+.fan .blade:nth-child(4) {
+  background-color: #BABABA;
+  transform: translateY(-7.5px) rotate(270deg);
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
