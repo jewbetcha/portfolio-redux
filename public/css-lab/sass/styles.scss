@@ -9,14 +9,12 @@ $gray: #BABABA;
   text-align: center;
 
   .row {
-    margin-bottom: 30px;
+    margin-bottom: 45px;
   }
 }
 
 // Pulsing circle
 #pulse {
-  height: 90px;
-
   &:hover .loading-pulse {
     animation: pulse 2s ease-in-out infinite;
   }
@@ -85,12 +83,12 @@ $gray: #BABABA;
 // Spinny fan
 #fan {
   &:hover .fan {
-    animation: rotate 2s ease-in-out infinite;
+    animation: rotate 1.5s ease-in-out infinite;
   }
 }
 .fan {
   height: 20px;
-  width: 60px;
+  width: 45px;
   margin: auto;
   margin-top: 30px;
 
@@ -120,4 +118,52 @@ $gray: #BABABA;
 // Fan rotate animation
 @keyframes rotate {
   100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
+}
+
+// Equalizer
+#eq {
+  &:hover {
+    .bar {
+      &:nth-child(1) {
+        animation: eq .5s ease-in-out infinite;
+      }
+      &:nth-child(2) {
+        animation: eq .5s .1s ease-in-out infinite;
+      }
+      &:nth-child(3) {
+        animation: eq .5s .2s ease-in-out infinite;
+      }
+      &:nth-child(4) {
+        animation: eq .5s .3s ease-in-out infinite;
+      }
+      &:nth-child(5) {
+        animation: eq .5s .4s ease-in-out infinite;
+      }
+    }
+  }
+}
+.equalizer {
+  height: 50px;
+  width: 50px;
+  margin: auto;
+
+  .bar {
+    width: 10px;
+    height: 10px;
+    float: left;
+    border-radius: 50%;
+
+    &:nth-child(odd) {
+      background-color: $brown;
+    }
+    &:nth-child(even) {
+      background-color: $blue;
+    }
+  }
+}
+// Eq animation
+@keyframes eq {
+  0% {transform: translateY(0);}
+  50% {transform: translateY(-15px);}
+  100% {transform: translateY(0);}
 }
