@@ -106,7 +106,7 @@
 }
 /* line 87, ../sass/styles.scss */
 #fan:hover .fan {
-  animation: rotate 1.5s ease-in-out infinite;
+  animation: rotate 1.8s ease-in-out infinite;
 }
 
 /* line 91, ../sass/styles.scss */
@@ -200,5 +200,96 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+/* line 178, ../sass/styles.scss */
+#dna:hover .dna-left .strand:nth-child(1) {
+  animation: dnaLeft .8s ease-in-out infinite;
+}
+/* line 181, ../sass/styles.scss */
+#dna:hover .dna-left .strand:nth-child(2) {
+  animation: dnaLeft .8s .1s ease-in-out infinite;
+}
+/* line 184, ../sass/styles.scss */
+#dna:hover .dna-left .strand:nth-child(3) {
+  animation: dnaLeft .8s .2s ease-in-out infinite;
+}
+/* line 187, ../sass/styles.scss */
+#dna:hover .dna-left .strand:nth-child(4) {
+  animation: dnaLeft .8s .3s ease-in-out infinite;
+}
+/* line 190, ../sass/styles.scss */
+#dna:hover .dna-left .strand:nth-child(5) {
+  animation: dnaLeft .8s .4s ease-in-out infinite;
+}
+/* line 197, ../sass/styles.scss */
+#dna:hover .dna-right .strand:nth-child(1) {
+  animation: dnaRight .8s ease-in-out infinite;
+}
+/* line 200, ../sass/styles.scss */
+#dna:hover .dna-right .strand:nth-child(2) {
+  animation: dnaRight .8s .1s ease-in-out infinite;
+}
+/* line 203, ../sass/styles.scss */
+#dna:hover .dna-right .strand:nth-child(3) {
+  animation: dnaRight .8s .2s ease-in-out infinite;
+}
+/* line 206, ../sass/styles.scss */
+#dna:hover .dna-right .strand:nth-child(4) {
+  animation: dnaRight .8s .3s ease-in-out infinite;
+}
+/* line 209, ../sass/styles.scss */
+#dna:hover .dna-right .strand:nth-child(5) {
+  animation: dnaRight .8s .4s ease-in-out infinite;
+}
+
+/* line 216, ../sass/styles.scss */
+.full-dna {
+  height: 50px;
+  width: 50px;
+  margin: auto;
+}
+/* line 221, ../sass/styles.scss */
+.full-dna .dna {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+/* line 226, ../sass/styles.scss */
+.full-dna .dna .strand {
+  height: 10px;
+  width: 10px;
+  margin: auto;
+  border-radius: 50%;
+}
+/* line 232, ../sass/styles.scss */
+.full-dna .dna .strand:nth-child(odd) {
+  background-color: #483D3F;
+}
+/* line 235, ../sass/styles.scss */
+.full-dna .dna .strand:nth-child(even) {
+  background-color: #0081AF;
+}
+
+@keyframes dnaLeft {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes dnaRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }

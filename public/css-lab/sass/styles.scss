@@ -85,7 +85,7 @@ $gray: #BABABA;
 // Spinny fan
 #fan {
   &:hover .fan {
-    animation: rotate 1.5s ease-in-out infinite;
+    animation: rotate 1.8s ease-in-out infinite;
   }
 }
 .fan {
@@ -168,4 +168,84 @@ $gray: #BABABA;
   0% {transform: translateY(0);}
   50% {transform: translateY(-15px);}
   100% {transform: translateY(0);}
+}
+
+// DNA
+#dna {
+  &:hover {
+    .dna-left {
+      .strand {
+        &:nth-child(1) {
+          animation: dnaLeft .8s ease-in-out infinite;
+        }
+        &:nth-child(2) {
+          animation: dnaLeft .8s .1s ease-in-out infinite;
+        }
+        &:nth-child(3) {
+          animation: dnaLeft .8s .2s ease-in-out infinite;
+        }
+        &:nth-child(4) {
+          animation: dnaLeft .8s .3s ease-in-out infinite;
+        }
+        &:nth-child(5) {
+          animation: dnaLeft .8s .4s ease-in-out infinite;
+        }
+      }
+    }
+    .dna-right {
+      .strand {
+        &:nth-child(1) {
+          animation: dnaRight .8s ease-in-out infinite;
+        }
+        &:nth-child(2) {
+          animation: dnaRight .8s .1s ease-in-out infinite;
+        }
+        &:nth-child(3) {
+          animation: dnaRight .8s .2s ease-in-out infinite;
+        }
+        &:nth-child(4) {
+          animation: dnaRight .8s .3s ease-in-out infinite;
+        }
+        &:nth-child(5) {
+          animation: dnaRight .8s .4s ease-in-out infinite;
+        }
+      }
+    }
+  }
+}
+.full-dna {
+  height: 50px;
+  width: 50px;
+  margin: auto;
+
+  .dna {
+    width: 50%;
+    float: left;
+    text-align: center;
+
+    .strand {
+      height: 10px;
+      width: 10px;
+      margin: auto;
+      border-radius: 50%;
+
+      &:nth-child(odd) {
+        background-color: $brown;
+      }
+      &:nth-child(even) {
+        background-color: $blue;
+      }
+    }
+  }
+}
+
+@keyframes dnaLeft {
+  0% {transform: translateX(0);}
+  50% {transform: translateX(20px);}
+  100% {transform: translateX(0);}
+}
+@keyframes dnaRight {
+  0% {transform: translateX(0);}
+  50% {transform: translateX(-20px);}
+  100% {transform: translateX(0);}
 }
