@@ -16,6 +16,10 @@ $gray: #BABABA;
 // Pulsing circle
 #pulse {
   height: 90px;
+
+  &:hover .loading-pulse {
+    animation: pulse 2s ease-in-out infinite;
+  }
 }
 .loading-pulse {
   height: 20px;
@@ -23,10 +27,6 @@ $gray: #BABABA;
   background-color: #0081AF;
   margin: auto;
   border-radius: 50%;
-  animation: pulse 2s ease-in-out infinite;
-
-}
-.pulse {
 }
 
 // Pulse animation
@@ -37,6 +37,18 @@ $gray: #BABABA;
 }
 
 // Sliders
+#sliders {
+  &:hover {
+    .slice {
+      &:nth-child(odd) {
+        animation: slideLeft 2s ease-in-out infinite;
+      }
+      &:nth-child(even) {
+        animation: slideRight 2s ease-in-out infinite;
+      }
+    }
+  }
+}
 .sliders {
   height: 40px;
   width: 40px;
@@ -48,11 +60,9 @@ $gray: #BABABA;
 
     &:nth-child(odd) {
       background-color: $blue;
-      animation: slideLeft 2s ease-in-out infinite;
     }
     &:nth-child(even) {
       background-color: $brown;
-      animation: slideRight 2s ease-in-out infinite;
     }
   }
 }
@@ -73,12 +83,16 @@ $gray: #BABABA;
 }
 
 // Spinny fan
+#fan {
+  &:hover .fan {
+    animation: rotate 2s ease-in-out infinite;
+  }
+}
 .fan {
   height: 20px;
   width: 60px;
   margin: auto;
   margin-top: 30px;
-  animation: rotate 2s ease-in-out infinite;
 
   .blade {
     width: 100%;

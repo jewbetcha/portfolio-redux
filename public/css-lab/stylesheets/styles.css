@@ -13,15 +13,18 @@
 #pulse {
   height: 90px;
 }
-
 /* line 20, ../sass/styles.scss */
+#pulse:hover .loading-pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* line 24, ../sass/styles.scss */
 .loading-pulse {
   height: 20px;
   width: 20px;
   background-color: #0081AF;
   margin: auto;
   border-radius: 50%;
-  animation: pulse 2s ease-in-out infinite;
 }
 
 @keyframes pulse {
@@ -38,26 +41,33 @@
     transform: scale(0.5, 0.5);
   }
 }
-/* line 40, ../sass/styles.scss */
+/* line 43, ../sass/styles.scss */
+#sliders:hover .slice:nth-child(odd) {
+  animation: slideLeft 2s ease-in-out infinite;
+}
+/* line 46, ../sass/styles.scss */
+#sliders:hover .slice:nth-child(even) {
+  animation: slideRight 2s ease-in-out infinite;
+}
+
+/* line 52, ../sass/styles.scss */
 .sliders {
   height: 40px;
   width: 40px;
   margin: auto;
 }
-/* line 45, ../sass/styles.scss */
+/* line 57, ../sass/styles.scss */
 .sliders .slice {
   height: 10px;
   width: 40px;
 }
-/* line 49, ../sass/styles.scss */
+/* line 61, ../sass/styles.scss */
 .sliders .slice:nth-child(odd) {
   background-color: #0081AF;
-  animation: slideLeft 2s ease-in-out infinite;
 }
-/* line 53, ../sass/styles.scss */
+/* line 64, ../sass/styles.scss */
 .sliders .slice:nth-child(even) {
   background-color: #483D3F;
-  animation: slideRight 2s ease-in-out infinite;
 }
 
 @keyframes slideLeft {
@@ -94,35 +104,39 @@
     transform: translateX(0px);
   }
 }
-/* line 76, ../sass/styles.scss */
+/* line 87, ../sass/styles.scss */
+#fan:hover .fan {
+  animation: rotate 2s ease-in-out infinite;
+}
+
+/* line 91, ../sass/styles.scss */
 .fan {
   height: 20px;
   width: 60px;
   margin: auto;
   margin-top: 30px;
-  animation: rotate 2s ease-in-out infinite;
 }
-/* line 83, ../sass/styles.scss */
+/* line 97, ../sass/styles.scss */
 .fan .blade {
   width: 100%;
   height: 5px;
 }
-/* line 87, ../sass/styles.scss */
+/* line 101, ../sass/styles.scss */
 .fan .blade:nth-child(1) {
   background-color: #0081AF;
   transform: translateY(7.5px);
 }
-/* line 91, ../sass/styles.scss */
+/* line 105, ../sass/styles.scss */
 .fan .blade:nth-child(2) {
   background-color: #7E7778;
   transform: translateY(2.5px) rotate(135deg);
 }
-/* line 95, ../sass/styles.scss */
+/* line 109, ../sass/styles.scss */
 .fan .blade:nth-child(3) {
   background-color: #483D3F;
   transform: translateY(-2.5px) rotate(45deg);
 }
-/* line 99, ../sass/styles.scss */
+/* line 113, ../sass/styles.scss */
 .fan .blade:nth-child(4) {
   background-color: #BABABA;
   transform: translateY(-7.5px) rotate(270deg);
