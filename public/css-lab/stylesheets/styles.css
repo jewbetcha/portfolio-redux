@@ -1,0 +1,37 @@
+/* line 1, ../sass/styles.scss */
+#main {
+  max-width: 1280px;
+  margin: auto;
+  text-align: center;
+}
+/* line 6, ../sass/styles.scss */
+#main .row {
+  margin-bottom: 30px;
+}
+
+/* line 10, ../sass/styles.scss */
+.loading-pulse {
+  height: 50px;
+  width: 50px;
+  background-color: #0081AF;
+  margin: auto;
+  border-radius: 50%;
+}
+
+@keyframes pulse {
+  0% {
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+  }
+  50% {
+    width: 75px;
+    height: 75px;
+    opacity: .2;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+  }
+}
