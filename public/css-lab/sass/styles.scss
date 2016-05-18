@@ -11,8 +11,10 @@ $gray: #BABABA;
   .row {
     margin-bottom: 45px;
   }
+  #top {
+    margin-bottom: 0;
+  }
 }
-
 // Pulsing circle
 #pulse {
   &:hover .loading-pulse {
@@ -53,7 +55,7 @@ $gray: #BABABA;
   margin: auto;
 
   .slice {
-    height: 10px;
+    height: 5px;
     width: 40px;
 
     &:nth-child(odd) {
