@@ -4,7 +4,7 @@ $lightBrown: #7E7778;
 $gray: #BABABA;
 
 #main {
-  max-width: 1280px;
+  max-width: 850px;
   margin: auto;
   text-align: center;
 
@@ -241,12 +241,12 @@ $gray: #BABABA;
 // DNA animation
 @keyframes dnaLeft {
   0% {transform: translateX(0);}
-  50% {transform: translateX(20px);}
+  50% {transform: translateX(25px);}
   100% {transform: translateX(0);}
 }
 @keyframes dnaRight {
   0% {transform: translateX(0);}
-  50% {transform: translateX(-20px);}
+  50% {transform: translateX(-25px);}
   100% {transform: translateX(0);}
 }
 
@@ -286,4 +286,67 @@ $gray: #BABABA;
 
 @keyframes flip {
   100% { transform: rotateX(360deg); }
+}
+
+// Starbust
+#burst {
+  &:hover {
+    .dots {
+      animation: rotate 1.3s ease-in-out infinite;
+    }
+    .dot {
+      &:nth-child(1) {
+        animation: burstUpLeft 1s ease-in-out infinite;
+      }
+      &:nth-child(2) {
+        animation: burstUpRight 1s ease-in-out infinite;
+      }
+      &:nth-child(3) {
+        animation: burstDownLeft 1s ease-in-out infinite;
+      }
+      &:nth-child(4) {
+        animation: burstDownRight 1s ease-in-out infinite;
+      }
+    }
+  }
+}
+.dots {
+  height: 40px;
+  width: 40px;
+  margin: auto;
+
+  .dot {
+    height: 20px;
+    width: 50%;
+    border-radius: 50%;
+    margin: auto;
+    float: left;
+
+    &:nth-child(odd) {
+      background-color: $brown;
+    }
+    &:nth-child(even) {
+      background-color: $blue;
+    }
+  }
+}
+@keyframes burstUpLeft {
+  0% {transform: translate(0);}
+  50% {transform: translate(-15px,-15px);}
+  100% {transform: translate(0);}
+}
+@keyframes burstUpRight {
+  0% {transform: translate(0);}
+  50% {transform: translate(15px, -15px);}
+  100% {transform: translate(0);}
+}
+@keyframes burstDownRight {
+  0% {transform: translate(0);}
+  50% {transform: translate(15px,15px);}
+  100% {transform: translate(0);}
+}
+@keyframes burstDownLeft {
+  0% {transform: translate(0);}
+  50% {transform: translate(-15px, 15px);}
+  100% {transform: translate(0);}
 }

@@ -1,6 +1,6 @@
 /* line 6, ../sass/styles.scss */
 #main {
-  max-width: 1280px;
+  max-width: 850px;
   margin: auto;
   text-align: center;
 }
@@ -276,7 +276,7 @@
     transform: translateX(0);
   }
   50% {
-    transform: translateX(20px);
+    transform: translateX(25px);
   }
   100% {
     transform: translateX(0);
@@ -287,7 +287,7 @@
     transform: translateX(0);
   }
   50% {
-    transform: translateX(-20px);
+    transform: translateX(-25px);
   }
   100% {
     transform: translateX(0);
@@ -330,5 +330,93 @@
 @keyframes flip {
   100% {
     transform: rotateX(360deg);
+  }
+}
+/* line 294, ../sass/styles.scss */
+#burst:hover .dots {
+  animation: rotate 1.3s ease-in-out infinite;
+}
+/* line 298, ../sass/styles.scss */
+#burst:hover .dot:nth-child(1) {
+  animation: burstUpLeft 1s ease-in-out infinite;
+}
+/* line 301, ../sass/styles.scss */
+#burst:hover .dot:nth-child(2) {
+  animation: burstUpRight 1s ease-in-out infinite;
+}
+/* line 304, ../sass/styles.scss */
+#burst:hover .dot:nth-child(3) {
+  animation: burstDownLeft 1s ease-in-out infinite;
+}
+/* line 307, ../sass/styles.scss */
+#burst:hover .dot:nth-child(4) {
+  animation: burstDownRight 1s ease-in-out infinite;
+}
+
+/* line 313, ../sass/styles.scss */
+.dots {
+  height: 40px;
+  width: 40px;
+  margin: auto;
+}
+/* line 318, ../sass/styles.scss */
+.dots .dot {
+  height: 20px;
+  width: 50%;
+  border-radius: 50%;
+  margin: auto;
+  float: left;
+}
+/* line 325, ../sass/styles.scss */
+.dots .dot:nth-child(odd) {
+  background-color: #483D3F;
+}
+/* line 328, ../sass/styles.scss */
+.dots .dot:nth-child(even) {
+  background-color: #0081AF;
+}
+
+@keyframes burstUpLeft {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(-15px, -15px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes burstUpRight {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(15px, -15px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes burstDownRight {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(15px, 15px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes burstDownLeft {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(-15px, 15px);
+  }
+  100% {
+    transform: translate(0);
   }
 }
