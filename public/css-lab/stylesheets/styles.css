@@ -334,7 +334,7 @@
 }
 /* line 294, ../sass/styles.scss */
 #burst:hover .dots {
-  animation: rotate 1.3s ease-in-out infinite;
+  animation: rotate 1s ease-in-out infinite;
 }
 /* line 298, ../sass/styles.scss */
 #burst:hover .dot:nth-child(1) {

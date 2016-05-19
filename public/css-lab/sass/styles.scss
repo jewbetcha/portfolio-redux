@@ -292,7 +292,7 @@ $gray: #BABABA;
 #burst {
   &:hover {
     .dots {
-      animation: rotate 1.3s ease-in-out infinite;
+      animation: rotate 1s ease-in-out infinite;
     }
     .dot {
       &:nth-child(1) {
