@@ -3,13 +3,16 @@ $brown: #483D3F;
 $lightBrown: #7E7778;
 $gray: #BABABA;
 
+.columns {
+  margin: 15px 0;
+}
 #main {
   max-width: 850px;
   margin: auto;
   text-align: center;
 
   .row {
-    margin-bottom: 45px;
+    //margin-bottom: 45px;
   }
   #top {
     margin-bottom: 0;
