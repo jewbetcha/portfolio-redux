@@ -353,3 +353,63 @@ $gray: #BABABA;
   50% {transform: translate(-15px, 15px);}
   100% {transform: translate(0);}
 }
+
+// Falling box
+#falling-box {
+  &:hover {
+    .box {
+      animation: fallBox 4s ease-in-out infinite;
+    }
+  }
+}
+.falling-box {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  .box {
+    height: 20px;
+    width: 20px;
+    background-color: $brown;
+  }
+  .platform {
+    height: 50px;
+    width: 50px;
+    border-top: 2px solid $blue;
+    border-right: 2px solid $blue;
+  }
+}
+@keyframes fallBox {
+  0% {
+       transform: translate(0, 0em) rotate(-45deg);
+   }
+   5% {
+       transform: translate(.5em, 0em) rotate(-50deg);
+   }
+   20% {
+       transform: translate(1em, 0em) rotate(47deg);
+   }
+   25% {
+       transform: translate(1.5em, 0em) rotate(45deg);
+   }
+   30% {
+       transform: translate(2em, 0em) rotate(40deg);
+   }
+   45% {
+       transform: translate(2.5em, 0em) rotate(137deg);
+   }
+   50% {
+       transform: translate(3em, 0em) rotate(135deg);
+   }
+   55% {
+       transform: translate(3.5em, 1em) rotate(130deg);
+   }
+   70% {
+       transform: translate(3em, 2em) rotate(217deg);
+   }
+   75% {
+       transform: translate(3em, 3em) rotate(220deg);
+   }
+   100% {
+       transform: translate(3em, 4em) rotate(-225deg);
+   }
+}

@@ -421,3 +421,63 @@
     transform: translate(0);
   }
 }
+/* line 360, ../sass/styles.scss */
+#falling-box:hover .box {
+  animation: fallBox 4s ease-in-out infinite;
+}
+
+/* line 365, ../sass/styles.scss */
+.falling-box {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+}
+/* line 369, ../sass/styles.scss */
+.falling-box .box {
+  height: 20px;
+  width: 20px;
+  background-color: #483D3F;
+}
+/* line 374, ../sass/styles.scss */
+.falling-box .platform {
+  height: 50px;
+  width: 50px;
+  border-top: 2px solid #0081AF;
+  border-right: 2px solid #0081AF;
+}
+
+@keyframes fallBox {
+  0% {
+    transform: translate(0, 0em) rotate(-45deg);
+  }
+  5% {
+    transform: translate(0.5em, 0em) rotate(-50deg);
+  }
+  20% {
+    transform: translate(1em, 0em) rotate(47deg);
+  }
+  25% {
+    transform: translate(1.5em, 0em) rotate(45deg);
+  }
+  30% {
+    transform: translate(2em, 0em) rotate(40deg);
+  }
+  45% {
+    transform: translate(2.5em, 0em) rotate(137deg);
+  }
+  50% {
+    transform: translate(3em, 0em) rotate(135deg);
+  }
+  55% {
+    transform: translate(3.5em, 1em) rotate(130deg);
+  }
+  70% {
+    transform: translate(3em, 2em) rotate(217deg);
+  }
+  75% {
+    transform: translate(3em, 3em) rotate(220deg);
+  }
+  100% {
+    transform: translate(3em, 4em) rotate(-225deg);
+  }
+}
