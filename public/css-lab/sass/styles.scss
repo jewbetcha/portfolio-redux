@@ -358,7 +358,7 @@ $gray: #BABABA;
 #falling-box {
   &:hover {
     .box {
-      animation: fallBox 4s ease-in-out infinite;
+      animation: fallBox 3s ease-in infinite;
     }
   }
 }
@@ -380,36 +380,42 @@ $gray: #BABABA;
 }
 @keyframes fallBox {
   0% {
-       transform: translate(0, 0em) rotate(-45deg);
+       transform: translate(0, 0em) rotate(45deg);
    }
    5% {
-       transform: translate(.5em, 0em) rotate(-50deg);
+       transform: translate(10px, 0em) rotate(90deg);
    }
    20% {
-       transform: translate(1em, 0em) rotate(47deg);
+       transform: translate(20px, 0em) rotate(135deg);
    }
    25% {
-       transform: translate(1.5em, 0em) rotate(45deg);
+       transform: translate(30px, 0em) rotate(180deg);
    }
    30% {
-       transform: translate(2em, 0em) rotate(40deg);
+       transform: translate(40px, 0em) rotate(225deg);
    }
    45% {
-       transform: translate(2.5em, 0em) rotate(137deg);
+       transform: translate(50px, 0em) rotate(270deg);
    }
    50% {
-       transform: translate(3em, 0em) rotate(135deg);
+       transform: translate(55px, 10px) rotate(315deg);
    }
    55% {
-       transform: translate(3.5em, 1em) rotate(130deg);
+       transform: translate(55px, 20px) rotate(330deg);
+   }
+   60% {
+       transform: translate(55px, 30px) rotate(350deg);
+   }
+   65% {
+       transform: translate(55px, 40px) rotate(360deg);
    }
    70% {
-       transform: translate(3em, 2em) rotate(217deg);
+       transform: translate(55px, 50px) rotate(365deg);
    }
    75% {
-       transform: translate(3em, 3em) rotate(220deg);
+       transform: translate(55px, 60px) rotate(370deg);
    }
    100% {
-       transform: translate(3em, 4em) rotate(-225deg);
+       transform: translate(55px, 70px) rotate(375deg);
    }
 }
