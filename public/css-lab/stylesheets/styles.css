@@ -487,3 +487,60 @@
     transform: translate(55px, 70px) rotate(375deg);
   }
 }
+/* line 427, ../sass/styles.scss */
+#polka:hover .bubble:nth-child(1) {
+  animation: bubble 1s .2s ease-in-out infinite;
+}
+/* line 430, ../sass/styles.scss */
+#polka:hover .bubble:nth-child(2) {
+  animation: bubble 1s .4s ease-in-out infinite;
+}
+/* line 433, ../sass/styles.scss */
+#polka:hover .bubble:nth-child(3) {
+  animation: bubble 1s .6s ease-in-out infinite;
+}
+/* line 436, ../sass/styles.scss */
+#polka:hover .bubble:nth-child(4) {
+  animation: bubble 1s .8s ease-in-out infinite;
+}
+/* line 439, ../sass/styles.scss */
+#polka:hover .bubble:nth-child(5) {
+  animation: bubble 1s 1s ease-in-out infinite;
+}
+
+/* line 445, ../sass/styles.scss */
+.bubbles {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+}
+/* line 450, ../sass/styles.scss */
+.bubbles .bubble {
+  width: 20px;
+  height: 20px;
+  float: left;
+  border-radius: 50%;
+}
+/* line 456, ../sass/styles.scss */
+.bubbles .bubble:nth-child(odd) {
+  background-color: #483D3F;
+}
+/* line 459, ../sass/styles.scss */
+.bubbles .bubble:nth-child(even) {
+  background-color: #0081AF;
+}
+
+@keyframes bubble {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: .5;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
