@@ -27,7 +27,12 @@ a {
   color: $brown;
 
   &:hover {
-    color: $white;
+    color: $blue;
+  }
+}
+a button {
+  &:hover {
+    color: $white !important;
   }
 }
 h2,

@@ -21,10 +21,15 @@ a {
 }
 /* line 29, ../sass/components/_global.scss */
 a:hover {
-  color: #fff;
+  color: #0081AF;
 }
 
-/* line 33, ../sass/components/_global.scss */
+/* line 34, ../sass/components/_global.scss */
+a button:hover {
+  color: #fff !important;
+}
+
+/* line 38, ../sass/components/_global.scss */
 h2,
 h5 {
   font-weight: bold;
@@ -71,7 +76,7 @@ h5 {
     opacity: 1;
   }
 }
-/* line 54, ../sass/components/_global.scss */
+/* line 59, ../sass/components/_global.scss */
 .my-text {
   display: flex;
   align-items: center;
@@ -80,33 +85,33 @@ h5 {
   margin: 0 auto;
 }
 
-/* line 61, ../sass/components/_global.scss */
+/* line 66, ../sass/components/_global.scss */
 .letter {
   margin: 0 2px;
 }
 
-/* line 64, ../sass/components/_global.scss */
+/* line 69, ../sass/components/_global.scss */
 .letter-space {
   display: none;
 }
 
-/* line 67, ../sass/components/_global.scss */
+/* line 72, ../sass/components/_global.scss */
 .letter-7 {
   margin-right: 10px;
 }
 
-/* line 72, ../sass/components/_global.scss */
+/* line 77, ../sass/components/_global.scss */
 .icobutton::after {
   border: 5px solid rgba(79, 126, 139, 0.8);
 }
 
-/* line 76, ../sass/components/_global.scss */
+/* line 81, ../sass/components/_global.scss */
 .icobutton:hover::after {
   -webkit-animation: anim-effect-jelena 0.4s ease-out forwards;
   animation: anim-effect-jelena 0.4s ease-out forwards;
 }
 
-/* line 80, ../sass/components/_global.scss */
+/* line 85, ../sass/components/_global.scss */
 .icobutton::after {
   content: '';
   position: absolute;
