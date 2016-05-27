@@ -24,12 +24,7 @@ a:hover {
   color: #0081AF;
 }
 
-/* line 34, ../sass/components/_global.scss */
-a button:hover {
-  color: #fff !important;
-}
-
-/* line 38, ../sass/components/_global.scss */
+/* line 33, ../sass/components/_global.scss */
 h2,
 h5 {
   font-weight: bold;
@@ -76,7 +71,7 @@ h5 {
     opacity: 1;
   }
 }
-/* line 59, ../sass/components/_global.scss */
+/* line 54, ../sass/components/_global.scss */
 .my-text {
   display: flex;
   align-items: center;
@@ -85,33 +80,33 @@ h5 {
   margin: 0 auto;
 }
 
-/* line 66, ../sass/components/_global.scss */
+/* line 61, ../sass/components/_global.scss */
 .letter {
   margin: 0 2px;
 }
 
-/* line 69, ../sass/components/_global.scss */
+/* line 64, ../sass/components/_global.scss */
 .letter-space {
   display: none;
 }
 
-/* line 72, ../sass/components/_global.scss */
+/* line 67, ../sass/components/_global.scss */
 .letter-7 {
   margin-right: 10px;
 }
 
-/* line 77, ../sass/components/_global.scss */
+/* line 72, ../sass/components/_global.scss */
 .icobutton::after {
   border: 5px solid rgba(79, 126, 139, 0.8);
 }
 
-/* line 81, ../sass/components/_global.scss */
+/* line 76, ../sass/components/_global.scss */
 .icobutton:hover::after {
   -webkit-animation: anim-effect-jelena 0.4s ease-out forwards;
   animation: anim-effect-jelena 0.4s ease-out forwards;
 }
 
-/* line 85, ../sass/components/_global.scss */
+/* line 80, ../sass/components/_global.scss */
 .icobutton::after {
   content: '';
   position: absolute;
@@ -237,7 +232,7 @@ h5 {
 #stuff .hover-effect {
   overflow: hidden;
 }
-/* line 88, ../sass/components/_nav.scss */
+/* line 89, ../sass/components/_nav.scss */
 #stuff .hover-effect::after {
   content: '';
   position: absolute;
@@ -256,18 +251,22 @@ h5 {
   -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
 }
-/* line 108, ../sass/components/_nav.scss */
+/* line 109, ../sass/components/_nav.scss */
 #stuff .hover-effect:hover:after {
   height: 260%;
   opacity: 1;
 }
 /* line 113, ../sass/components/_nav.scss */
+#stuff .hover-effect:hover {
+  color: #fff;
+}
+/* line 117, ../sass/components/_nav.scss */
 #stuff .hover-effect:active:after {
   height: 400%;
   opacity: 1;
 }
 
-/* line 119, ../sass/components/_nav.scss */
+/* line 123, ../sass/components/_nav.scss */
 #social button {
   position: relative;
   margin: 0;
@@ -280,25 +279,29 @@ h5 {
   width: 50px;
   margin: 0 10px;
 }
-/* line 131, ../sass/components/_nav.scss */
+/* line 135, ../sass/components/_nav.scss */
 #social a {
   text-decoration: none;
 }
-/* line 134, ../sass/components/_nav.scss */
+/* line 138, ../sass/components/_nav.scss */
+#social a:hover {
+  color: #483D3F;
+}
+/* line 142, ../sass/components/_nav.scss */
 #social span {
   display: block;
   font-size: 40px;
   margin: 5px 5px;
 }
-/* line 140, ../sass/components/_nav.scss */
+/* line 148, ../sass/components/_nav.scss */
 #social .fa-twitter:before {
   content: "\f099";
 }
-/* line 145, ../sass/components/_nav.scss */
+/* line 153, ../sass/components/_nav.scss */
 #social .fa-github:before {
   content: "\f09b";
 }
-/* line 150, ../sass/components/_nav.scss */
+/* line 158, ../sass/components/_nav.scss */
 #social .fa-linkedin-square:before {
   content: "\f08c";
 }

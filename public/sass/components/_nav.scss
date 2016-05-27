@@ -85,6 +85,7 @@
   .hover-effect {
   	overflow: hidden;
 
+
     &::after {
       content: '';
     	position: absolute;
@@ -109,6 +110,9 @@
   	height: 260%;
   	opacity: 1;
   }
+  .hover-effect:hover {
+    color: #fff;
+  }
 
   .hover-effect:active:after {
   	height: 400%;
@@ -130,6 +134,10 @@
   }
   a {
     text-decoration: none;
+
+    &:hover {
+     color: $brown;
+    }
   }
   span {
     display: block;

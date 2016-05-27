@@ -30,11 +30,6 @@ a {
     color: $blue;
   }
 }
-a button {
-  &:hover {
-    color: $white !important;
-  }
-}
 h2,
 h5 {
   font-weight: bold;
