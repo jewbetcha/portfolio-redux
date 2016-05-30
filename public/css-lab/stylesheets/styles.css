@@ -544,3 +544,53 @@
     transform: scale(2);
   }
 }
+/* line 473, ../sass/styles.scss */
+#pong:hover .ball {
+  animation: pong 1s infinite;
+}
+
+/* line 478, ../sass/styles.scss */
+.pong {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+/* line 483, ../sass/styles.scss */
+.pong .blocker-left {
+  background-color: #483D3F;
+  width: 10px;
+  height: 15px;
+  margin: auto;
+  text-align: left;
+  float: left;
+}
+/* line 491, ../sass/styles.scss */
+.pong .blocker-right {
+  background-color: #483D3F;
+  width: 10px;
+  height: 15px;
+  margin: auto;
+  text-align: right;
+  float: right;
+}
+/* line 499, ../sass/styles.scss */
+.pong .ball {
+  background-color: #0081AF;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: auto;
+  float: left;
+}
+
+@keyframes pong {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(65px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
