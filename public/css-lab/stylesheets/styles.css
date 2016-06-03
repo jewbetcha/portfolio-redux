@@ -546,16 +546,24 @@
 }
 /* line 473, ../sass/styles.scss */
 #pong:hover .ball {
-  animation: pong 1s infinite;
+  animation: pong-ball 2s cubic-bezier(0.46, -0.19, 0.67, 1.07) infinite;
+}
+/* line 476, ../sass/styles.scss */
+#pong:hover .blocker-left {
+  animation: blocker-left 2s infinite;
+}
+/* line 479, ../sass/styles.scss */
+#pong:hover .blocker-right {
+  animation: blocker-right 2s infinite;
 }
 
-/* line 478, ../sass/styles.scss */
+/* line 484, ../sass/styles.scss */
 .pong {
   width: 100px;
   height: 100px;
   margin: auto;
 }
-/* line 483, ../sass/styles.scss */
+/* line 489, ../sass/styles.scss */
 .pong .blocker-left {
   background-color: #483D3F;
   width: 10px;
@@ -564,7 +572,7 @@
   text-align: left;
   float: left;
 }
-/* line 491, ../sass/styles.scss */
+/* line 497, ../sass/styles.scss */
 .pong .blocker-right {
   background-color: #483D3F;
   width: 10px;
@@ -573,7 +581,7 @@
   text-align: right;
   float: right;
 }
-/* line 499, ../sass/styles.scss */
+/* line 505, ../sass/styles.scss */
 .pong .ball {
   background-color: #0081AF;
   width: 15px;
@@ -583,14 +591,54 @@
   float: left;
 }
 
-@keyframes pong {
+@keyframes pong-ball {
   0% {
-    transform: translateX(0);
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(65px) translateY(25px);
   }
   50% {
-    transform: translateX(65px);
+    transform: translateX(0) translateY(25px);
+  }
+  75% {
+    transform: translateX(65px) translateY(0);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(0) translateY(0);
+  }
+}
+@keyframes blocker-right {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(0) translateY(25px);
+  }
+  50% {
+    transform: translateX(0) translateY(25px);
+  }
+  75% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+@keyframes blocker-left {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(0) translateY(25px);
+  }
+  75% {
+    transform: translateX(0) translateY(25px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
   }
 }

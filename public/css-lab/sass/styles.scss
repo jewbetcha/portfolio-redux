@@ -471,7 +471,13 @@ $gray: #BABABA;
 #pong {
   &:hover {
     .ball {
-      animation: pong 1s infinite;
+      animation: pong-ball 2s cubic-bezier(0.46, -0.19, 0.67, 1.07) infinite;
+    }
+    .blocker-left {
+      animation: blocker-left 2s infinite;
+    }
+    .blocker-right {
+      animation: blocker-right 2s infinite;
     }
   }
 }
@@ -506,8 +512,24 @@ $gray: #BABABA;
   }
 }
 
-@keyframes pong {
-  0% {transform: translateX(0);}
-  50% {transform: translateX(65px);}
-  100% {transform: translateX(0);}
+@keyframes pong-ball {
+  0% {transform: translateX(0) translateY(0);}
+  25% {transform: translateX(65px) translateY(25px);}
+  50% {transform: translateX(0) translateY(25px);}
+  75% {transform: translateX(65px) translateY(0);}
+  100% {transform: translateX(0) translateY(0);}
+}
+@keyframes blocker-right {
+  0% {transform: translateX(0) translateY(0);}
+  25% {transform: translateX(0) translateY(25px);}
+  50% {transform: translateX(0) translateY(25px);}
+  75% {transform: translateX(0) translateY(0);}
+  100% {transform: translateX(0) translateY(0);}
+}
+@keyframes blocker-left {
+  0% {transform: translateX(0) translateY(0);}
+  25% {transform: translateX(0) translateY(0);}
+  50% {transform: translateX(0) translateY(25px);}
+  75% {transform: translateX(0) translateY(25px);}
+  100% {transform: translateX(0) translateY(0);}
 }
