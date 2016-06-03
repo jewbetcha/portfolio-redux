@@ -1,0 +1,26 @@
+// Facts section.
+#facts {
+	max-width: 500px;
+	margin: 30px auto;
+	padding: 0 40px;
+
+	h5 {
+		text-align: center;
+	}
+	.fact {
+		opacity: 0;
+		display: flex;
+		align-items: center;
+    justify-content: flex-start;
+		margin: 10px 0;
+
+		img {
+			width: 50px;
+			height: 50px;
+		}
+		p {
+			margin: 0;
+			padding: 0 15px;
+		}
+	}
+}

@@ -30,5 +30,6 @@
         opacity: 1,
         y: 25
       }, 0.2);
+      TweenMax.staggerTo('.fact', 0.8, {opacity: 1}, 0.4);
   });
 })();
