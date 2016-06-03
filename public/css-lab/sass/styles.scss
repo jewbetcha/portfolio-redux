@@ -533,3 +533,83 @@ $gray: #BABABA;
   75% {transform: translateX(0) translateY(25px);}
   100% {transform: translateX(0) translateY(0);}
 }
+
+// Battery
+#battery {
+  &:hover {
+    .charge {
+      &:nth-child(5) {
+        animation: chargeUp1 1.2s linear infinite;
+      }
+      &:nth-child(4) {
+        animation: chargeUp2 1.2s linear infinite;
+      }
+      &:nth-child(3) {
+        animation: chargeUp3 1.2s linear infinite;
+      }
+      &:nth-child(2) {
+        animation: chargeUp4 1.2s linear infinite;
+      }
+      &:nth-child(1) {
+        animation: chargeUp5 1.2s linear infinite;
+      }
+    }
+  }
+}
+.battery {
+  height: 100px;
+  width: 50px;
+  margin: auto;
+  border: 4px solid $brown;
+  border-radius: 8%;
+
+  .charge {
+    width: 91%;
+    height: 17.5px;
+    margin: 2px;
+    background-color: $blue;
+    opacity: 0;
+    //animation-fill-mode: forwards;
+  }
+}
+
+@keyframes chargeUp1 {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  40% { opacity: 1; }
+  60% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes chargeUp2 {
+  0% { opacity: 0; }
+  20% { opacity: 0; }
+  40% { opacity: 1; }
+  60% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes chargeUp3 {
+  0% { opacity: 0; }
+  20% { opacity: 0; }
+  40% { opacity: 0; }
+  60% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes chargeUp4 {
+  0% { opacity: 0; }
+  20% { opacity: 0; }
+  40% { opacity: 0; }
+  60% { opacity: 0; }
+  80% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes chargeUp5 {
+  0% { opacity: 0; }
+  20% { opacity: 0; }
+  40% { opacity: 0; }
+  60% { opacity: 0; }
+  80% { opacity: 0; }
+  100% { opacity: 1; }
+}
