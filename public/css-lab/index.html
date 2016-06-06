@@ -200,6 +200,7 @@
     </div>
     <script>
       $( document ).ready(function() {
+        // Make sure touch events work on mobiles
         $('body').bind('touchstart', function() {});
         document.addEventListener("touchstart", function(){}, true);
       });
