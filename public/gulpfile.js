@@ -13,6 +13,15 @@ gulp.task('prefix', function () {
 		.pipe(gulp.dest('./stylesheets/'));
 });
 
+gulp.task('labs-prefix', function () {
+	return gulp.src('css-lab/stylesheets/styles.css')
+		.pipe(autoprefixer({
+			browsers: ['last 3 versions'],
+			cascade: false
+		}))
+		.pipe(gulp.dest('./css-lab/stylesheets/'));
+});
+
 gulp.task('minify', function() {
   return gulp.src('stylesheets/styles.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
