@@ -200,7 +200,8 @@
     </div>
     <script>
       $( document ).ready(function() {
-
+        $('body').bind('touchstart', function() {});
+        document.addEventListener("touchstart", function(){}, true);
       });
     </script>
     <script>
