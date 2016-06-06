@@ -398,8 +398,10 @@ h5 {
 #facts .fact img {
   min-width: 50px;
   min-height: 50px;
+  max-width: 50px;
+  max-height: 50px;
 }
-/* line 21, ../sass/components/_facts.scss */
+/* line 23, ../sass/components/_facts.scss */
 #facts .fact p {
   margin: 0;
   padding: 0 15px;
