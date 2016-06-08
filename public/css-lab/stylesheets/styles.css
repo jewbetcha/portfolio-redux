@@ -788,7 +788,7 @@
 /* line 625, ../sass/styles.scss */
 .progress-bar {
   width: 100px;
-  height: 30px;
+  height: 25px;
   margin: auto;
   border: 2px solid #0081AF;
   overflow: hidden;
