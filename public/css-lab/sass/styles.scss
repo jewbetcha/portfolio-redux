@@ -612,3 +612,34 @@ $gray: #BABABA;
   80% { opacity: 0; }
   100% { opacity: 1; }
 }
+
+// Progress bar
+#bar {
+  &:hover {
+    .progress {
+      animation: progress 1.5s ease-in-out infinite;
+
+    }
+  }
+}
+.progress-bar {
+  width: 100px;
+  height: 30px;
+  margin: auto;
+  border: 2px solid $blue;
+  overflow: hidden;
+
+  .progress {
+    height: 100%;
+    width: 10px;
+    margin: 0 5px;
+    background-color: $brown;
+    float: left;
+    transform: skew(-30deg) translateX(-100px);
+  }
+}
+
+@keyframes progress {
+  0% { transform: translateX(-100px) skew(-30deg); }
+  100% { transform: translateX(100px) skew(-30deg); }
+}
