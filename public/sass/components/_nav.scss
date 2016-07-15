@@ -160,3 +160,14 @@
     }
   }
 }
+
+// Substitute letters
+.sub {
+  text-align: center;
+  max-width: 450px;
+  margin: auto !important;
+
+  .sub-word {
+    float: none !important;
+  }
+}

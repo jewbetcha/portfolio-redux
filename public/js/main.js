@@ -31,5 +31,24 @@
         y: 25
       }, 0.2);
       TweenMax.staggerTo('.fact', 0.8, {opacity: 1}, 0.4);
+
+      var opts = {
+        containerId: "sub",
+        namespace: "sub",
+        interval: 3500,
+        speed: 200,
+        mobileWidth: 475,
+        verbose: false,
+        random: false,
+        best: true,
+        clearOriginalContent: false
+      };
+      var sub = new Sub([
+        "a big fan of eating",
+        "a JavaScript enthusiast",
+        "a lover of all things internet",
+        "a bike enthusiast",
+        "a tech agnostic"
+      ], opts).run();
   });
 })();
