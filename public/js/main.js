@@ -11,9 +11,9 @@
       weight: 7,
       rounded: true,
       color: '#483D3F',
-      duration: 1.2,
-      delay: [0.7,0.6,0.5,0.45,0.15,0.35,0.3,0.2,0.1,0.3,0.3,0.1,0.2,0.54],
-      fade: 0.2,
+      duration: 1.0,
+      delay: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0,1.1,1.2,1.3,1.4],
+      fade: 0.8,
       easing: d3_ease.easeCubicInOut.ease,   // Easing function
       individualDelays: true,
   };
