@@ -47,7 +47,7 @@
         "a big fan of eating",
         "a JavaScript enthusiast",
         "a lover of all things internet",
-        "a bike enthusiast",
+        "an occasional writer",
         "a tech agnostic"
       ], opts).run();
   });
