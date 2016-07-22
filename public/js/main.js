@@ -22,7 +22,7 @@
   var myText = new Letters(el, options);
   myText.show();
 
-  $( document ).ready(function() {
+  $(document).ready(function() {
       var body = $('body');
 
       var tl = new TimelineLite();
