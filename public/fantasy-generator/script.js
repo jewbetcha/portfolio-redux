@@ -197,5 +197,9 @@
 
 				$(this).text('Try again?');
       });
+
+			$('.slot').jSlots({
+        spinner : '#play'
+    });
 	});
 }(jQuery));
