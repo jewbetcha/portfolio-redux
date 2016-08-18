@@ -4,7 +4,9 @@ body {
   display: flex;
   align-items: center;
 }
-
+.flex {
+  display: flex;
+}
 #main {
   text-align: center;
 }
