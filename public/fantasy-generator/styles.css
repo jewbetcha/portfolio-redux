@@ -6,6 +6,7 @@ body {
 }
 .flex {
   display: flex;
+  flex-wrap: wrap;
 }
 #main {
   text-align: center;
@@ -35,7 +36,7 @@ body {
   flex-direction: row;
   justify-content: center;
   margin: 0 auto;
-  max-width: 375px;
+  max-width: 350px;
 }
 
 .result {
